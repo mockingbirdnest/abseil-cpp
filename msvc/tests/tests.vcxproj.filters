@@ -95,16 +95,10 @@
     <ClCompile Include="..\..\absl\container\internal\unordered_set_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\failure_signal_handler_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\debugging\leak_check_fail_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\leak_check_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\symbolize_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\demangle_test.cc">
@@ -242,9 +236,6 @@
     <ClCompile Include="..\..\absl\synchronization\blocking_counter_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\synchronization\lifetime_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\synchronization\mutex_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -300,6 +291,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\utility\utility_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

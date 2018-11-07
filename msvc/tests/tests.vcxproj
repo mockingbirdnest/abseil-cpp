@@ -42,12 +42,10 @@
     <ClCompile Include="..\..\absl\container\internal\test_instance_tracker_test.cc" />
     <ClCompile Include="..\..\absl\container\internal\unordered_map_test.cc" />
     <ClCompile Include="..\..\absl\container\internal\unordered_set_test.cc" />
-    <ClCompile Include="..\..\absl\debugging\failure_signal_handler_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\demangle_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\stack_consumption_test.cc" />
     <ClCompile Include="..\..\absl\debugging\leak_check_fail_test.cc" />
     <ClCompile Include="..\..\absl\debugging\leak_check_test.cc" />
-    <ClCompile Include="..\..\absl\debugging\symbolize_test.cc" />
     <ClCompile Include="..\..\absl\hash\hash_test.cc" />
     <ClCompile Include="..\..\absl\hash\internal\city_test.cc" />
     <ClCompile Include="..\..\absl\memory\memory_exception_safety_test.cc" />
@@ -86,13 +84,14 @@
     <ClCompile Include="..\..\absl\synchronization\blocking_counter_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem_test.cc" />
-    <ClCompile Include="..\..\absl\synchronization\lifetime_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\mutex_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\notification_test.cc" />
     <ClCompile Include="..\..\absl\time\civil_time_test.cc" />
     <ClCompile Include="..\..\absl\time\clock_test.cc" />
     <ClCompile Include="..\..\absl\time\duration_test.cc" />
     <ClCompile Include="..\..\absl\time\format_test.cc" />
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc" />
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc" />
     <ClCompile Include="..\..\absl\time\internal\test_util.cc" />
     <ClCompile Include="..\..\absl\time\time_test.cc" />
     <ClCompile Include="..\..\absl\time\time_zone_test.cc" />
@@ -117,5 +116,34 @@
   <ItemGroup>
     <Text Include="..\..\absl\strings\testdata\getline-1.txt" />
     <Text Include="..\..\absl\strings\testdata\getline-2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\base\base.vcxproj">
+      <Project>{61ceed69-e6fb-4f61-aa59-25640adab4e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\container\container.vcxproj">
+      <Project>{4f7e6a40-25ea-4e7f-9849-9c8d4463268d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\debugging\debugging.vcxproj">
+      <Project>{116b9c3b-e42e-43ef-9590-a31435694576}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\hash\hash.vcxproj">
+      <Project>{4a99cb40-9e88-4374-a67f-3c15d6b61e6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\numeric\numeric.vcxproj">
+      <Project>{36fcb0f6-a293-497f-8478-e955d175f2d0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\strings\strings.vcxproj">
+      <Project>{73bf0ce2-a996-4392-8940-206ad81c3774}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\synchronization\synchronization.vcxproj">
+      <Project>{67c97d22-ed98-47bd-a840-46044fdeb59f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\time\time.vcxproj">
+      <Project>{bc3a5306-ca46-41e6-83c5-19d828ba7778}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\types\types.vcxproj">
+      <Project>{e1c9d158-f541-4a35-8cd5-33545d45fb89}</Project>
+    </ProjectReference>
   </ItemGroup>
 </Project>
