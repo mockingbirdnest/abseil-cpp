@@ -10,6 +10,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\hash\hash.h" />
     <ClInclude Include="..\..\absl\hash\internal\city.h" />
+    <ClInclude Include="..\..\absl\hash\internal\hash.h" />
     <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h" />
   </ItemGroup>
   <ItemGroup>
