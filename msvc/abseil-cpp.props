@@ -97,6 +97,7 @@
   </ItemDefinitionGroup>
 
   <!--Import our property sheets.-->
+  <Import Project="$(SolutionDir)google_glog.props" />
   <ImportGroup Condition="$(ProjectName) == benchmarks">
     <Import Project="$(SolutionDir)..\..\benchmark\msvc\portability_macros.props" />
     <Import Project="$(SolutionDir)..\..\benchmark\msvc\windows_libraries.props" />

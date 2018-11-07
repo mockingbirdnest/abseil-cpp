@@ -119,9 +119,6 @@
     <ClCompile Include="..\..\absl\base\internal\exception_safety_testing.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\base\internal\low_level_alloc_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\sysinfo_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
