@@ -67,7 +67,6 @@
     <ClCompile Include="..\..\absl\strings\internal\str_format\convert_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\extension_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\output_test.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\parser_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\utf8_test.cc" />
     <ClCompile Include="..\..\absl\strings\match_test.cc" />
     <ClCompile Include="..\..\absl\strings\numbers_test.cc" />
@@ -89,8 +88,6 @@
     <ClCompile Include="..\..\absl\time\clock_test.cc" />
     <ClCompile Include="..\..\absl\time\duration_test.cc" />
     <ClCompile Include="..\..\absl\time\format_test.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc" />
     <ClCompile Include="..\..\absl\time\internal\test_util.cc" />
     <ClCompile Include="..\..\absl\time\time_test.cc" />
     <ClCompile Include="..\..\absl\time\time_zone_test.cc" />
@@ -100,7 +97,6 @@
     <ClCompile Include="..\..\absl\types\optional_test.cc" />
     <ClCompile Include="..\..\absl\types\span_test.cc" />
     <ClCompile Include="..\..\absl\types\variant_exception_safety_test.cc" />
-    <ClCompile Include="..\..\absl\types\variant_test.cc" />
     <ClCompile Include="..\..\absl\utility\utility_test.cc" />
   </ItemGroup>
   <ItemGroup>

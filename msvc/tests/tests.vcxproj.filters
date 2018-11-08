@@ -224,9 +224,6 @@
     <ClCompile Include="..\..\absl\strings\internal\str_format\output_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\strings\internal\str_format\parser_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\synchronization\barrier_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -284,16 +281,7 @@
     <ClCompile Include="..\..\absl\types\variant_exception_safety_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\types\variant_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\utility\utility_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
