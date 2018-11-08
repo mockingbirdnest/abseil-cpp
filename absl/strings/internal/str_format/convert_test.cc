@@ -32,7 +32,8 @@ std::string LengthModFor(long long) { return "ll"; }           // NOLINT
 std::string LengthModFor(unsigned long long) { return "ll"; }  // NOLINT
 
 std::string EscCharImpl(int v) {
-  if (isprint(v)) return std::string(1, static_cast<char>(v));
+  if (isprint(static_cast<unsigned char>(v)))
+    return std::string(1, static_cast<char>(v));
   char buf[64];
   int n = snprintf(buf, sizeof(buf), "\\%#.2x",
                    static_cast<unsigned>(v & 0xff));
