@@ -155,7 +155,7 @@ TEST_F(PerThreadSemTest, Timeouts) {
   absl::Time timeout = absl::Now() + absl::Milliseconds(50);
   // Allow for a slight early return, to account for quality of implementation
   // issues on various platforms.
-  const absl::Duration slop = absl::Microseconds(200);
+  const absl::Duration slop = absl::Microseconds(1000);
   EXPECT_FALSE(Wait(timeout));
   EXPECT_LE(timeout, absl::Now() + slop);
 
