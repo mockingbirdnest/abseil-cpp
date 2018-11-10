@@ -62,7 +62,6 @@
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(SolutionDir)..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4018;4068;4101;4180;4244;4267;4723;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-      <PreprocessorDefinitions>_ENABLE_EXTENDED_ALIGNED_STORAGE;NOMINMAX;WIN32_LEAN_AND_MEAN%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -98,6 +97,7 @@
 
   <!--Import our property sheets.-->
   <Import Project="$(SolutionDir)google_glog.props" />
+  <Import Project="$(SolutionDir)portability_macros.props"/>
   <ImportGroup Condition="$(ProjectName) == benchmarks">
     <Import Project="$(SolutionDir)..\..\benchmark\msvc\portability_macros.props" />
     <Import Project="$(SolutionDir)..\..\benchmark\msvc\windows_libraries.props" />
