@@ -63,10 +63,14 @@
 #ifndef ABSL_TIME_TIME_H_
 #define ABSL_TIME_TIME_H_
 
+#define NOWINDOWS
+
 #if !defined(_MSC_VER)
 #include <sys/time.h>
 #else
+#ifndef NOWINDOWS
 #include <winsock2.h>
+#endif
 #endif
 #include <chrono>  // NOLINT(build/c++11)
 #include <cstdint>
@@ -730,7 +734,9 @@ int64_t ToUnixNanos(Time t);
 int64_t ToUnixMicros(Time t);
 int64_t ToUnixMillis(Time t);
 int64_t ToUnixSeconds(Time t);
+#ifndef NOWINDOWS
 time_t ToTimeT(Time t);
+#endif
 double ToUDate(Time t);
 int64_t ToUniversal(Time t);
 
@@ -748,6 +754,7 @@ int64_t ToUniversal(Time t);
 // and gettimeofday(2)), so conversion functions are provided for both cases.
 // The "to timespec/val" direction is easily handled via overloading, but
 // for "from timespec/val" the desired type is part of the function name.
+#ifndef NOWINDOWS
 Duration DurationFromTimespec(timespec ts);
 Duration DurationFromTimeval(timeval tv);
 timespec ToTimespec(Duration d);
@@ -756,6 +763,7 @@ Time TimeFromTimespec(timespec ts);
 Time TimeFromTimeval(timeval tv);
 timespec ToTimespec(Time t);
 timeval ToTimeval(Time t);
+#endif
 
 // FromChrono()
 //

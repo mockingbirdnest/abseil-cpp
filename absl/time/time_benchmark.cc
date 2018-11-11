@@ -275,6 +275,7 @@ BENCHMARK(BM_Time_FromCivilDay0_Libc);
 // To/FromTimespec
 //
 
+#ifndef NOWINDOWS
 void BM_Time_ToTimespec(benchmark::State& state) {
   absl::Time now = absl::Now();
   while (state.KeepRunning()) {
@@ -294,6 +295,7 @@ void BM_Time_FromTimespec(benchmark::State& state) {
   }
 }
 BENCHMARK(BM_Time_FromTimespec);
+#endif
 
 //
 // Comparison with InfiniteFuture/Past

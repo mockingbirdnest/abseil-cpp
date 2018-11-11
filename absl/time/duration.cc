@@ -507,6 +507,7 @@ Duration Ceil(const Duration d, const Duration unit) {
 // Factory functions.
 //
 
+#ifndef NOWINDOWS
 Duration DurationFromTimespec(timespec ts) {
   if (static_cast<uint64_t>(ts.tv_nsec) < 1000 * 1000 * 1000) {
     int64_t ticks = ts.tv_nsec * kTicksPerNanosecond;
@@ -522,6 +523,7 @@ Duration DurationFromTimeval(timeval tv) {
   }
   return Seconds(tv.tv_sec) + Microseconds(tv.tv_usec);
 }
+#endif
 
 //
 // Conversion to other duration types.
@@ -589,6 +591,7 @@ double ToDoubleHours(Duration d) {
   return FDivDuration(d, Hours(1));
 }
 
+#ifndef NOWINDOWS
 timespec ToTimespec(Duration d) {
   timespec ts;
   if (!time_internal::IsInfiniteDuration(d)) {
@@ -645,6 +648,7 @@ timeval ToTimeval(Duration d) {
   tv.tv_usec = static_cast<int>(ts.tv_nsec / 1000);  // suseconds_t
   return tv;
 }
+#endif
 
 std::chrono::nanoseconds ToChronoNanoseconds(Duration d) {
   return time_internal::ToChronoDuration<std::chrono::nanoseconds>(d);
