@@ -1239,6 +1239,7 @@ TEST(Duration, RoundTripUnits) {
 #undef ROUND_TRIP_UNIT
 }
 
+#ifndef NOWINDOWS
 TEST(Duration, TruncConversions) {
   // Tests ToTimespec()/DurationFromTimespec()
   const struct {
@@ -1368,6 +1369,7 @@ TEST(Duration, SmallConversions) {
   tv.tv_usec = 2;
   EXPECT_THAT(ToTimeval(absl::Nanoseconds(2000)), TimevalMatcher(tv));
 }
+#endif
 
 void VerifyApproxSameAsMul(double time_as_seconds, int* const misses) {
   auto direct_seconds = absl::Seconds(time_as_seconds);
@@ -1453,6 +1455,7 @@ TEST(Duration, ToDoubleSecondsCheckRandom) {
   }
 }
 
+#ifndef NOWINDOWS
 TEST(Duration, ConversionSaturation) {
   absl::Duration d;
 
@@ -1526,6 +1529,7 @@ TEST(Duration, ConversionSaturation) {
   EXPECT_EQ(min_timespec_sec, ts.tv_sec);
   EXPECT_EQ(0, ts.tv_nsec);
 }
+#endif
 
 TEST(Duration, FormatDuration) {
   // Example from Go's docs.

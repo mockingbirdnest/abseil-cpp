@@ -342,6 +342,7 @@ BENCHMARK(BM_Duration_ToInt64Hours);
 // To/FromTimespec
 //
 
+#ifndef NOWINDOWS
 void BM_Duration_ToTimespec_AbslTime(benchmark::State& state) {
   absl::Duration d = absl::Seconds(1);
   while (state.KeepRunning()) {
@@ -395,6 +396,7 @@ void BM_Duration_FromTimespec_Double(benchmark::State& state) {
   }
 }
 BENCHMARK(BM_Duration_FromTimespec_Double);
+#endif
 
 //
 // String conversions

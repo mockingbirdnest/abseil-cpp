@@ -274,7 +274,9 @@ int64_t ToUnixSeconds(Time t) {
   return time_internal::GetRepHi(time_internal::ToUnixDuration(t));
 }
 
+#ifndef NOWINDOWS
 time_t ToTimeT(Time t) { return absl::ToTimespec(t).tv_sec; }
+#endif
 
 double ToUDate(Time t) {
   return absl::FDivDuration(time_internal::ToUnixDuration(t),
@@ -285,6 +287,7 @@ int64_t ToUniversal(absl::Time t) {
   return absl::FloorToUnit(t - absl::UniversalEpoch(), absl::Nanoseconds(100));
 }
 
+#ifndef NOWINDOWS
 absl::Time TimeFromTimespec(timespec ts) {
   return time_internal::FromUnixDuration(absl::DurationFromTimespec(ts));
 }
@@ -330,6 +333,7 @@ timeval ToTimeval(Time t) {
   tv.tv_usec = static_cast<int>(ts.tv_nsec / 1000);  // suseconds_t
   return tv;
 }
+#endif
 
 Time FromChrono(const std::chrono::system_clock::time_point& tp) {
   return time_internal::FromUnixDuration(time_internal::FromChrono(

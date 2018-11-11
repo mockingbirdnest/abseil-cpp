@@ -231,6 +231,7 @@ TEST(Time, Infinity) {
   EXPECT_EQ(ipast, t - absl::InfiniteDuration());
 }
 
+#ifndef NOWINDOWS
 TEST(Time, FloorConversion) {
 #define TEST_FLOOR_CONVERSION(TO, FROM) \
   EXPECT_EQ(1, TO(FROM(1001)));         \
@@ -518,6 +519,7 @@ TEST(Time, RoundtripConversion) {
 
 #undef TEST_CONVERSION_ROUND_TRIP
 }
+#endif
 
 template <typename Duration>
 std::chrono::system_clock::time_point MakeChronoUnixTime(const Duration& d) {
@@ -623,6 +625,7 @@ TEST(Time, Chrono128) {
             ts.time_since_epoch().count() % Timestamp::duration::period::den);
 }
 
+#ifndef NOWINDOWS
 TEST(Time, TimeZoneAt) {
   const absl::TimeZone nyc =
       absl::time_internal::LoadTimeZone("America/New_York");
@@ -676,6 +679,7 @@ TEST(Time, TimeZoneAt) {
   EXPECT_EQ("Wed, 31 Dec 1969 23:59:59 +0000 (UTC)",
             absl::FormatTime(fmt, minus1_cl.pre, absl::UTCTimeZone()));
 }
+#endif
 
 // FromCivil(CivilSecond(year, mon, day, hour, min, sec), UTCTimeZone())
 // has a specialized fastpath implementation, which we exercise here.
@@ -719,6 +723,7 @@ TEST(Time, FromCivilUTC) {
             absl::FormatTime(fmt, t, utc));
 }
 
+#ifndef NOWINDOWS
 TEST(Time, ToTM) {
   const absl::TimeZone utc = absl::UTCTimeZone();
 
@@ -786,6 +791,7 @@ TEST(Time, ToTM) {
   EXPECT_EQ(0, tm.tm_yday);
   EXPECT_FALSE(tm.tm_isdst);
 }
+#endif
 
 TEST(Time, FromTM) {
   const absl::TimeZone nyc =
@@ -948,6 +954,7 @@ TEST(Time, Limits) {
   EXPECT_LT(min, min + absl::Nanoseconds(1) / 4);
 }
 
+#ifndef NOWINDOWS
 TEST(Time, ConversionSaturation) {
   const absl::TimeZone utc = absl::UTCTimeZone();
   absl::Time t;
@@ -1111,6 +1118,7 @@ TEST(Time, ConversionSaturation) {
   t = absl::FromCivil(absl::CivilSecond(-292277022657, 1, 27, 8, 29, 51), utc);
   EXPECT_EQ("infinite-past", absl::FormatTime(absl::RFC3339_full, t, utc));
 }
+#endif
 
 // In zones with POSIX-style recurring rules we use special logic to
 // handle conversions in the distant future.  Here we check the limits
