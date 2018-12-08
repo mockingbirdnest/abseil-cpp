@@ -225,7 +225,7 @@ TEST(Time, Infinity) {
   static_assert(t > ipast, "");
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Time, FloorConversion) {
 #define TEST_FLOOR_CONVERSION(TO, FROM) \
   EXPECT_EQ(1, TO(FROM(1001)));         \
@@ -573,7 +573,7 @@ TEST(Time, ToChronoTime) {
             absl::ToChronoTime(absl::UnixEpoch() - tick));
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Time, TimeZoneAt) {
   const absl::TimeZone nyc =
       absl::time_internal::LoadTimeZone("America/New_York");
@@ -671,7 +671,7 @@ TEST(Time, FromCivilUTC) {
             absl::FormatTime(fmt, t, utc));
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Time, ToTM) {
   const absl::TimeZone utc = absl::UTCTimeZone();
 
@@ -878,7 +878,7 @@ TEST(Time, Limits) {
   EXPECT_LT(min, min + absl::Nanoseconds(1) / 4);
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Time, ConversionSaturation) {
   const absl::TimeZone utc = absl::UTCTimeZone();
   absl::Time t;

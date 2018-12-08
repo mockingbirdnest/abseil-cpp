@@ -507,7 +507,7 @@ Duration Ceil(const Duration d, const Duration unit) {
 // Factory functions.
 //
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 Duration DurationFromTimespec(timespec ts) {
   if (static_cast<uint64_t>(ts.tv_nsec) < 1000 * 1000 * 1000) {
     int64_t ticks = ts.tv_nsec * kTicksPerNanosecond;
@@ -591,7 +591,7 @@ double ToDoubleHours(Duration d) {
   return FDivDuration(d, Hours(1));
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 timespec ToTimespec(Duration d) {
   timespec ts;
   if (!time_internal::IsInfiniteDuration(d)) {

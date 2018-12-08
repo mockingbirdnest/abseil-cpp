@@ -275,7 +275,7 @@ BENCHMARK(BM_Time_FromCivilDay0_Libc);
 // To/FromTimespec
 //
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 void BM_Time_ToTimespec(benchmark::State& state) {
   absl::Time now = absl::Now();
   while (state.KeepRunning()) {
