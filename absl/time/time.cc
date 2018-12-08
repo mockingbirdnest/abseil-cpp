@@ -274,7 +274,7 @@ int64_t ToUnixSeconds(Time t) {
   return time_internal::GetRepHi(time_internal::ToUnixDuration(t));
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 time_t ToTimeT(Time t) { return absl::ToTimespec(t).tv_sec; }
 #endif
 
@@ -287,7 +287,7 @@ int64_t ToUniversal(absl::Time t) {
   return absl::FloorToUnit(t - absl::UniversalEpoch(), absl::Nanoseconds(100));
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 absl::Time TimeFromTimespec(timespec ts) {
   return time_internal::FromUnixDuration(absl::DurationFromTimespec(ts));
 }

@@ -62,8 +62,6 @@
 #ifndef ABSL_TIME_TIME_H_
 #define ABSL_TIME_TIME_H_
 
-#define NOWINDOWS
-
 #if !defined(_MSC_VER)
 #include <sys/time.h>
 #else
@@ -75,7 +73,6 @@
 // `winsock2.h` themselves. This is both inconsistent and troublesome, but so is
 // including 'windows.h' so we are picking the lesser of two evils here.
 struct timeval;
-#endif
 #endif
 #include <chrono>  // NOLINT(build/c++11)
 #include <cmath>
@@ -765,7 +762,7 @@ int64_t ToUnixNanos(Time t);
 int64_t ToUnixMicros(Time t);
 int64_t ToUnixMillis(Time t);
 int64_t ToUnixSeconds(Time t);
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 time_t ToTimeT(Time t);
 #endif
 double ToUDate(Time t);
@@ -785,7 +782,7 @@ int64_t ToUniversal(Time t);
 // and gettimeofday(2)), so conversion functions are provided for both cases.
 // The "to timespec/val" direction is easily handled via overloading, but
 // for "from timespec/val" the desired type is part of the function name.
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 Duration DurationFromTimespec(timespec ts);
 Duration DurationFromTimeval(timeval tv);
 timespec ToTimespec(Duration d);

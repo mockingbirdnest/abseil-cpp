@@ -342,7 +342,7 @@ BENCHMARK(BM_Duration_ToInt64Hours);
 // To/FromTimespec
 //
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 void BM_Duration_ToTimespec_AbslTime(benchmark::State& state) {
   absl::Duration d = absl::Seconds(1);
   while (state.KeepRunning()) {

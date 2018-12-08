@@ -1239,7 +1239,7 @@ TEST(Duration, RoundTripUnits) {
 #undef ROUND_TRIP_UNIT
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Duration, TruncConversions) {
   // Tests ToTimespec()/DurationFromTimespec()
   const struct {
@@ -1455,7 +1455,7 @@ TEST(Duration, ToDoubleSecondsCheckRandom) {
   }
 }
 
-#ifndef NOWINDOWS
+#ifndef ABSL_DONT_INCLUDE_WINDOWS_HEADERS
 TEST(Duration, ConversionSaturation) {
   absl::Duration d;
 
