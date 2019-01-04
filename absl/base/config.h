@@ -364,7 +364,7 @@
 #endif
 
 #ifdef __has_include
-#if __has_include(<any>) && __cplusplus >= 201703L
+#if __has_include(<any>)
 #define ABSL_HAVE_STD_ANY 1
 #endif
 #endif
@@ -377,7 +377,7 @@
 #endif
 
 #ifdef __has_include
-#if __has_include(<optional>) && __cplusplus >= 201703L
+#if __has_include(<optional>)
 #define ABSL_HAVE_STD_OPTIONAL 1
 #endif
 #endif
@@ -390,7 +390,7 @@
 #endif
 
 #ifdef __has_include
-#if __has_include(<variant>) && __cplusplus >= 201703L
+#if __has_include(<variant>)
 #define ABSL_HAVE_STD_VARIANT 1
 #endif
 #endif
@@ -403,7 +403,7 @@
 #endif
 
 #ifdef __has_include
-#if __has_include(<string_view>) && __cplusplus >= 201703L
+#if __has_include(<string_view>)
 #define ABSL_HAVE_STD_STRING_VIEW 1
 #endif
 #endif
