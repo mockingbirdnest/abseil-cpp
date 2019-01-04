@@ -517,8 +517,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<any>) && defined(__cplusplus) && __cplusplus >= 201703L && \
-    !ABSL_INTERNAL_APPLE_CXX17_TYPES_UNAVAILABLE
+#if __has_include(<any>)
 #define ABSL_HAVE_STD_ANY 1
 #endif
 #endif
@@ -531,8 +530,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<optional>) && defined(__cplusplus) && \
-    __cplusplus >= 201703L && !ABSL_INTERNAL_APPLE_CXX17_TYPES_UNAVAILABLE
+#if __has_include(<optional>)
 #define ABSL_HAVE_STD_OPTIONAL 1
 #endif
 #endif
@@ -545,8 +543,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<variant>) && defined(__cplusplus) && \
-    __cplusplus >= 201703L && !ABSL_INTERNAL_APPLE_CXX17_TYPES_UNAVAILABLE
+#if __has_include(<variant>)
 #define ABSL_HAVE_STD_VARIANT 1
 #endif
 #endif
@@ -559,8 +556,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<string_view>) && defined(__cplusplus) && \
-    __cplusplus >= 201703L
+#if __has_include(<string_view>)
 #define ABSL_HAVE_STD_STRING_VIEW 1
 #endif
 #endif
