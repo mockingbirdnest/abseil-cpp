@@ -517,7 +517,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<any>)
+#if __has_include(<any>) && __cplusplus >= 201703L
 #define ABSL_HAVE_STD_ANY 1
 #endif
 #endif
@@ -530,7 +530,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<optional>)
+#if __has_include(<optional>) && __cplusplus >= 201703L
 #define ABSL_HAVE_STD_OPTIONAL 1
 #endif
 #endif
@@ -543,7 +543,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<variant>)
+#if __has_include(<variant>) && __cplusplus >= 201703L
 #define ABSL_HAVE_STD_VARIANT 1
 #endif
 #endif
