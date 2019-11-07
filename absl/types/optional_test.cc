@@ -952,7 +952,7 @@ TEST(optionalTest, OperatorAddr) {
     constexpr const absl::optional<DeletedOpAddr<v>> opt(absl::in_place_t{});
     static_assert(opt.has_value(), "");
     // static_assert(opt->value == v, "");
-    static_assert((*opt).value == v, "");
+    // static_assert((*opt).value == v, "");  // Broken in MSVC 16.3.8.
   }
   {  // non-constexpr
     const absl::optional<DeletedOpAddr<v>> opt(absl::in_place_t{});
