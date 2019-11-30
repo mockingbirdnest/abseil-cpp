@@ -624,7 +624,7 @@ class FileZoneInfoSource : public ZoneInfoSource {
       : fp_(fp, fclose), len_(len) {}
 
  private:
-  std::unique_ptr<FILE, int(*)(FILE*)> fp_;
+  std::unique_ptr<FILE, int(__cdecl*)(FILE*)> fp_;
   std::size_t len_;
 };
 

@@ -66,7 +66,7 @@ struct FailureSignalData {
   using StructSigaction = struct sigaction;
   #define FSD_PREVIOUS_INIT FailureSignalData::StructSigaction()
 #else
-  void (*previous_handler)(int);
+  void (__cdecl *previous_handler)(int);
   #define FSD_PREVIOUS_INIT SIG_DFL
 #endif
 };
@@ -192,7 +192,7 @@ static void InstallOneFailureHandler(FailureSignalData* data,
 #else
 
 static void InstallOneFailureHandler(FailureSignalData* data,
-                                     void (*handler)(int)) {
+                                     void (__cdecl *handler)(int)) {
   data->previous_handler = signal(data->signo, handler);
   ABSL_RAW_CHECK(data->previous_handler != SIG_ERR, "signal() failed");
 }
@@ -294,7 +294,7 @@ using GetTidType = decltype(absl::base_internal::GetTID());
 ABSL_CONST_INIT static std::atomic<GetTidType> failed_tid(0);
 
 #ifndef ABSL_HAVE_SIGACTION
-static void AbslFailureSignalHandler(int signo) {
+static void __cdecl AbslFailureSignalHandler(int signo) {
   void* ucontext = nullptr;
 #else
 static void AbslFailureSignalHandler(int signo, siginfo_t*, void* ucontext) {
