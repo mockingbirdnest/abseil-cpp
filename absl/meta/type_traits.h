@@ -409,6 +409,17 @@ using common_type_t = typename std::common_type<T...>::type;
 template <typename T>
 using underlying_type_t = typename std::underlying_type<T>::type;
 
+#if _MSVC_STL_VERSION >= 142
+}  // namespace absl
+namespace std {
+template <typename T>
+struct result_of;
+template <typename F, typename... Args>
+struct result_of<F(Args...)> : std::invoke_result<void, F, Args...> {};
+}  // namespace std
+namespace absl {
+#endif
+
 template <typename T>
 using result_of_t = typename std::result_of<T>::type;
 
