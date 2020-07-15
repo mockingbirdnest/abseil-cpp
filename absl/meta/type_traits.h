@@ -409,7 +409,7 @@ using common_type_t = typename std::common_type<T...>::type;
 template <typename T>
 using underlying_type_t = typename std::underlying_type<T>::type;
 
-#if _MSVC_STL_VERSION >= 142
+#if !_HAS_DEPRECATED_RESULT_OF
 }  // namespace absl
 namespace std {
 template <typename T>
