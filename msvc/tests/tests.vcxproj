@@ -21,7 +21,6 @@
     <ClCompile Include="..\..\absl\base\inline_variable_test_a.cc" />
     <ClCompile Include="..\..\absl\base\inline_variable_test_b.cc" />
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc" />
-    <ClCompile Include="..\..\absl\base\internal\bits_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\endian_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\exception_safety_testing.cc" />
     <ClCompile Include="..\..\absl\base\internal\sysinfo_test.cc" />

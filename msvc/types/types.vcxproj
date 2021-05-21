@@ -24,6 +24,5 @@
     <ClCompile Include="..\..\absl\types\bad_any_cast.cc" />
     <ClCompile Include="..\..\absl\types\bad_optional_access.cc" />
     <ClCompile Include="..\..\absl\types\bad_variant_access.cc" />
-    <ClCompile Include="..\..\absl\types\optional.cc" />
   </ItemGroup>
 </Project>

@@ -676,7 +676,7 @@ std::unique_ptr<ZoneInfoSource> AndroidZoneInfoSource::Open(
   // See Android's libc/tzcode/bionic.cpp for additional information.
   for (const char* tzdata : {"/data/misc/zoneinfo/current/tzdata",
                              "/system/usr/share/zoneinfo/tzdata"}) {
-    std::unique_ptr<FILE, int (*)(FILE*)> fp(FOpen(tzdata, "rb"), fclose);
+    std::unique_ptr<FILE, int(__cdecl*)(FILE*)> fp(FOpen(tzdata, "rb"), fclose);
     if (fp.get() == nullptr) continue;
 
     char hbuf[24];  // covers header.zonetab_offset too

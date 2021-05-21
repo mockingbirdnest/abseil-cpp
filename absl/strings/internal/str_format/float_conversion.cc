@@ -136,7 +136,7 @@ class BinaryToDecimal {
   // Run the conversion for `v * 2^exp` and call `f(binary_to_decimal)`.
   // This function will allocate enough stack space to perform the conversion.
   static void RunConversion(uint128 v, int exp,
-                            absl::FunctionRef<void(BinaryToDecimal)> f) {
+                            std::function<void(BinaryToDecimal)> f) {
     assert(exp > 0);
     assert(exp <= std::numeric_limits<MaxFloatType>::max_exponent);
     static_assert(
@@ -244,7 +244,7 @@ class FractionalDigitGenerator {
   // Run the conversion for `v * 2^exp` and call `f(generator)`.
   // This function will allocate enough stack space to perform the conversion.
   static void RunConversion(
-      uint128 v, int exp, absl::FunctionRef<void(FractionalDigitGenerator)> f) {
+      uint128 v, int exp, std::function<void(FractionalDigitGenerator)> f) {
     using Limits = std::numeric_limits<MaxFloatType>;
     assert(-exp < 0);
     assert(-exp >= Limits::min_exponent - 128);

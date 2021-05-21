@@ -110,9 +110,6 @@
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\base\internal\bits_test.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\endian_test.cc">
       <Filter>Source Files</Filter>
     </ClCompile>

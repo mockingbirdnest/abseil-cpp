@@ -46,8 +46,5 @@
     <ClCompile Include="..\..\absl\types\bad_variant_access.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\types\optional.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

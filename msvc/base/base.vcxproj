@@ -47,7 +47,6 @@
     <ClInclude Include="..\..\absl\base\thread_annotations.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\base\dynamic_annotations.cc" />
     <ClCompile Include="..\..\absl\base\internal\cycleclock.cc" />
     <ClCompile Include="..\..\absl\base\internal\low_level_alloc.cc" />
     <ClCompile Include="..\..\absl\base\internal\raw_logging.cc" />

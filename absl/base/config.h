@@ -731,5 +731,6 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #error "ABSL_HAVE_CLASS_TEMPLATE_ARGUMENT_DEDUCTION cannot be directly set."
 #elif defined(__cpp_deduction_guides)
 #define ABSL_HAVE_CLASS_TEMPLATE_ARGUMENT_DEDUCTION 1
+#endif
 
 #endif  // ABSL_BASE_CONFIG_H_
