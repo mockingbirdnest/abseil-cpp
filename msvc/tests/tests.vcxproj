@@ -10,6 +10,16 @@
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\base\internal\atomic_hook_test_helper.h" />
     <ClInclude Include="..\..\absl\base\internal\exception_safety_testing.h" />
@@ -32,13 +42,11 @@
     <ClCompile Include="..\..\absl\algorithm\container_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test_helper.cc" />
-    <ClCompile Include="..\..\absl\base\internal\cmake_thread_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\endian_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\errno_saver_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\exception_safety_testing.cc" />
     <ClCompile Include="..\..\absl\base\internal\exponential_biased_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\fast_type_id_test.cc" />
-    <ClCompile Include="..\..\absl\base\internal\low_level_alloc_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\periodic_sampler_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\scoped_set_env_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\strerror_test.cc" />
@@ -47,7 +55,6 @@
     <ClCompile Include="..\..\absl\base\internal\unique_small_name_test.cc" />
     <ClCompile Include="..\..\absl\base\bit_cast_test.cc" />
     <ClCompile Include="..\..\absl\base\call_once_test.cc" />
-    <ClCompile Include="..\..\absl\base\config_test.cc" />
     <ClCompile Include="..\..\absl\base\exception_safety_testing_test.cc" />
     <ClCompile Include="..\..\absl\base\inline_variable_test.cc" />
     <ClCompile Include="..\..\absl\base\inline_variable_test_a.cc" />
@@ -85,21 +92,16 @@
     <ClCompile Include="..\..\absl\container\node_hash_set_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\demangle_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\stack_consumption_test.cc" />
-    <ClCompile Include="..\..\absl\debugging\failure_signal_handler_test.cc" />
     <ClCompile Include="..\..\absl\debugging\leak_check_fail_test.cc" />
     <ClCompile Include="..\..\absl\debugging\leak_check_test.cc" />
-    <ClCompile Include="..\..\absl\debugging\symbolize_test.cc" />
     <ClCompile Include="..\..\absl\flags\internal\path_util_test.cc" />
     <ClCompile Include="..\..\absl\flags\internal\program_name_test.cc" />
     <ClCompile Include="..\..\absl\flags\internal\sequence_lock_test.cc" />
-    <ClCompile Include="..\..\absl\flags\internal\usage_test.cc" />
     <ClCompile Include="..\..\absl\flags\commandlineflag_test.cc" />
     <ClCompile Include="..\..\absl\flags\config_test.cc" />
     <ClCompile Include="..\..\absl\flags\flag_test.cc" />
     <ClCompile Include="..\..\absl\flags\flag_test_defs.cc" />
     <ClCompile Include="..\..\absl\flags\marshalling_test.cc" />
-    <ClCompile Include="..\..\absl\flags\parse_test.cc" />
-    <ClCompile Include="..\..\absl\flags\reflection_test.cc" />
     <ClCompile Include="..\..\absl\flags\usage_config_test.cc" />
     <ClCompile Include="..\..\absl\functional\bind_front_test.cc" />
     <ClCompile Include="..\..\absl\functional\function_ref_test.cc" />
@@ -120,12 +122,10 @@
     <ClCompile Include="..\..\absl\random\internal\fast_uniform_bits_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\generate_real_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\iostream_state_saver_test.cc" />
-    <ClCompile Include="..\..\absl\random\internal\nanobenchmark_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\nonsecure_base_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\pcg_engine_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\pool_urbg_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\randen_engine_test.cc" />
-    <ClCompile Include="..\..\absl\random\internal\randen_hwaes_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\randen_slow_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\randen_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\salted_seed_seq_test.cc" />
@@ -158,7 +158,6 @@
     <ClCompile Include="..\..\absl\strings\internal\str_format\convert_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\extension_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\output_test.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\parser_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\charconv_bigint_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\charconv_parse_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\char_map_test.cc" />
@@ -196,12 +195,9 @@
     <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\barrier_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\blocking_counter_test.cc" />
-    <ClCompile Include="..\..\absl\synchronization\lifetime_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\mutex_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\notification_test.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_test.cc" />
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc" />
     <ClCompile Include="..\..\absl\time\internal\test_util.cc" />
     <ClCompile Include="..\..\absl\time\civil_time_test.cc" />
     <ClCompile Include="..\..\absl\time\clock_test.cc" />
@@ -234,11 +230,20 @@
     <ProjectReference Include="..\debugging\debugging.vcxproj">
       <Project>{116b9c3b-e42e-43ef-9590-a31435694576}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\flags\flags.vcxproj">
+      <Project>{531d3279-eb26-4d98-9206-7f548c171e4a}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\hash\hash.vcxproj">
       <Project>{4a99cb40-9e88-4374-a67f-3c15d6b61e6b}</Project>
     </ProjectReference>
     <ProjectReference Include="..\numeric\numeric.vcxproj">
       <Project>{36fcb0f6-a293-497f-8478-e955d175f2d0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\random\random.vcxproj">
+      <Project>{a83f94f5-7ce8-4759-b4ce-0b133e102ffe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\status\status.vcxproj">
+      <Project>{134d7e5a-73ff-4cc4-af16-6cc56b3b7947}</Project>
     </ProjectReference>
     <ProjectReference Include="..\strings\strings.vcxproj">
       <Project>{73bf0ce2-a996-4392-8940-206ad81c3774}</Project>

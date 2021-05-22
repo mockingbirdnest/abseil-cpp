@@ -11,116 +11,121 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\algorithm\equal_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\base\internal\periodic_sampler_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\base\internal\spinlock_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\base\internal\strerror_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\base\internal\thread_identity_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\layout_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\raw_hash_set_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\raw_hash_set_probe_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\btree_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\fixed_array_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\inlined_vector_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\flag_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\functional\function_ref_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\hash_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\numeric\int128_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\internal\char_map_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\internal\memutil_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\internal\ostringstream_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\ascii_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\charconv_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\escaping_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\numbers_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\string_view_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\str_cat_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\str_join_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\str_replace_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\str_split_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\synchronization\internal\graphcycles_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\synchronization\blocking_counter_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\synchronization\mutex_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\civil_time_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\clock_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\duration_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\format_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\time\time_benchmark.cc">
-       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\types\variant_benchmark.cc">
-       <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\absl\algorithm\equal_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\periodic_sampler_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\strerror_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\thread_identity_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\layout_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\btree_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\fixed_array_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\inlined_vector_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\function_ref_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\hash_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\int128_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\char_map_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\memutil_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\ostringstream_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\ascii_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\charconv_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\escaping_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\numbers_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\string_view_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_cat_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_join_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_replace_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_split_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\blocking_counter_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\mutex_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\civil_time_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\clock_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\duration_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\format_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\time_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\variant_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\time\internal\test_util.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
