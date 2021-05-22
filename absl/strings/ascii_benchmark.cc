@@ -47,7 +47,7 @@ void AsciiBenchmark(benchmark::State& state, Function f) {
   state.SetBytesProcessed(state.iterations() * bytes.size());
 }
 
-using StdAsciiFunction = int (*)(int);
+using StdAsciiFunction = int (__cdecl*)(int);
 template <StdAsciiFunction f>
 void BM_Ascii(benchmark::State& state) {
   AsciiBenchmark(state, f);
