@@ -10,12 +10,17 @@
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Internal Files">
-      <UniqueIdentifier>{413d7a50-f16d-4752-a5bd-3632e2d14af3}</UniqueIdentifier>
+      <UniqueIdentifier>{618080f3-fd1e-4856-84ce-81ac68657f3f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\meta\type_traits.h">
+    <ClInclude Include="..\..\absl\cleanup\cleanup.h">
        <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\cleanup\internal\cleanup.h">
+       <Filter>Internal Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

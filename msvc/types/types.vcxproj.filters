@@ -9,42 +9,74 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{701d564c-ac3e-4efc-922e-fe144b4a662e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\types\any.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\bad_any_cast.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\bad_optional_access.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\bad_variant_access.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\compare.h">
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\optional.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\span.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\types\variant.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\types\internal\variant.h">
-      <Filter>Source Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\types\bad_any_cast.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\types\bad_optional_access.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\types\bad_variant_access.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="..\..\absl\types\internal\conformance_aliases.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\conformance_archetype.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\conformance_profile.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\conformance_testing_helpers.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\optional.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\parentheses.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\span.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\transform_args.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\internal\variant.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\types\bad_any_cast.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\bad_optional_access.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\types\bad_variant_access.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

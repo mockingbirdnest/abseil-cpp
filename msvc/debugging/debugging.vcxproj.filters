@@ -9,78 +9,83 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{8f3cc49b-f931-4ba3-82c0-34a5dc819448}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\debugging\failure_signal_handler.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\debugging\leak_check.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\debugging\stacktrace.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\symbolize.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\demangle.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\address_is_readable.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\elf_mem_image.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\examine_stack.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\stack_consumption.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\stacktrace_config.h">
-      <Filter>Source Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\debugging\symbolize.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\debugging\internal\vdso_support.h">
-      <Filter>Source Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\debugging\failure_signal_handler.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\leak_check.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\leak_check_disable.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\stacktrace.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\symbolize.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\address_is_readable.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\demangle.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\elf_mem_image.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\examine_stack.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\stack_consumption.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\debugging\internal\vdso_support.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="..\..\absl\debugging\internal\address_is_readable.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\demangle.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\elf_mem_image.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\examine_stack.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\stacktrace_config.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\stack_consumption.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\symbolize.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\vdso_support.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\address_is_readable.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\demangle.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\elf_mem_image.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\examine_stack.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\stack_consumption.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\internal\vdso_support.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\debugging\failure_signal_handler.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\leak_check.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\leak_check_disable.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\stacktrace.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\debugging\symbolize.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

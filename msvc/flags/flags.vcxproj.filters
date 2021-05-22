@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{a9372935-207f-41d4-950a-d5ffbd1aa92e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\flags\commandlineflag.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\config.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\declare.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\flag.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\marshalling.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\parse.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\reflection.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\usage.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\usage_config.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\flags\internal\commandlineflag.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\flag.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\parse.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\path_util.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\private_handle_accessor.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\program_name.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\registry.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\sequence_lock.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\usage.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\commandlineflag.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\flag.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\private_handle_accessor.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\program_name.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\internal\usage.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\flags\commandlineflag.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\flag.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\marshalling.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\parse.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\reflection.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\usage.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\flags\usage_config.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

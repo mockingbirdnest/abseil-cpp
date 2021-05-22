@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{af9b0d45-9615-4f58-9947-89ea544b9970}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\bernoulli_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\beta_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\bit_gen_ref.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\discrete_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\distributions.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\exponential_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\gaussian_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\log_uniform_int_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\mocking_bit_gen.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\mock_distributions.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\poisson_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\random.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\seed_gen_exception.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\seed_sequences.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\uniform_int_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\uniform_real_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\zipf_distribution.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\internal\chi_square.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\distribution_caller.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\explicit_seed_seq.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\fastmath.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\fast_uniform_bits.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\generate_real.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\iostream_state_saver.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\mock_helpers.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\mock_overload_set.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\nanobenchmark.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\nonsecure_base.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\pcg_engine.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\platform.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\pool_urbg.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_detect.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_engine.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_hwaes.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_slow.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_traits.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\salted_seed_seq.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\seed_material.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\sequence_urbg.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\traits.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\uniform_helper.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\wide_multiply.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\chi_square.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\gaussian_distribution_gentables.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\nanobenchmark.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\pool_urbg.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_benchmarks.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_detect.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_hwaes.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_round_keys.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\randen_slow.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\internal\seed_material.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\benchmarks.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\discrete_distribution.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\gaussian_distribution.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\seed_gen_exception.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\random\seed_sequences.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

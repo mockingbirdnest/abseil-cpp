@@ -9,10 +9,13 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{7c28deab-881a-44fc-9d47-7fbba2e28973}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\memory\memory.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

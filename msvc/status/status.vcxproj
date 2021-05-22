@@ -2,8 +2,8 @@
 <Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{36FCB0F6-A293-497F-8478-E955D175F2D0}</ProjectGuid>
-    <RootNamespace>numeric</RootNamespace>
+    <ProjectGuid>{134D7E5A-73FF-4CC4-AF16-6CC56B3B7947}</ProjectGuid>
+    <RootNamespace>algorithm</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
   </PropertyGroup>
@@ -11,14 +11,17 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
-    <ClInclude Include="..\..\absl\numeric\bits.h" />
-    <ClInclude Include="..\..\absl\numeric\int128.h" />
+    <ClInclude Include="..\..\absl\status\status.h" />
+    <ClInclude Include="..\..\absl\status\statusor.h" />
+    <ClInclude Include="..\..\absl\status\status_payload_printer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\numeric\internal\bits.h" />
-    <ClInclude Include="..\..\absl\numeric\internal\representation.h" />
+    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h" />
+    <ClInclude Include="..\..\absl\status\internal\status_internal.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\numeric\int128.cc" />
+    <ClCompile Include="..\..\absl\status\status.cc" />
+    <ClCompile Include="..\..\absl\status\statusor.cc" />
+    <ClCompile Include="..\..\absl\status\status_payload_printer.cc" />
   </ItemGroup>
 </Project>

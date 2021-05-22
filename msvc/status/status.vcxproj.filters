@@ -10,27 +10,36 @@
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Internal Files">
-      <UniqueIdentifier>{86b164d4-b950-4a53-b98a-2906d1eb6637}</UniqueIdentifier>
+      <UniqueIdentifier>{9e62a0f7-bc33-4fff-a53c-11334cef46a9}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\numeric\bits.h">
+    <ClInclude Include="..\..\absl\status\status.h">
        <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\numeric\int128.h">
+    <ClInclude Include="..\..\absl\status\statusor.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\status_payload_printer.h">
        <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\numeric\internal\bits.h">
+    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\numeric\internal\representation.h">
+    <ClInclude Include="..\..\absl\status\internal\status_internal.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\numeric\int128.cc">
+    <ClInclude Include="..\..\absl\status\status.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\statusor.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\status_payload_printer.cc">
        <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

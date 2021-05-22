@@ -10,12 +10,25 @@
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
     <Filter Include="Internal Files">
-      <UniqueIdentifier>{413d7a50-f16d-4752-a5bd-3632e2d14af3}</UniqueIdentifier>
+      <UniqueIdentifier>{3a5ff32f-b4a5-4fdf-95ef-f1bc5ff83095}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\meta\type_traits.h">
+    <ClInclude Include="..\..\absl\functional\bind_front.h">
        <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\absl\functional\function_ref.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\internal\front_binder.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\functional\internal\function_ref.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

@@ -13,24 +13,10 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\strings\ascii.h" />
     <ClInclude Include="..\..\absl\strings\charconv.h" />
+    <ClInclude Include="..\..\absl\strings\cord.h" />
+    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
+    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
     <ClInclude Include="..\..\absl\strings\escaping.h" />
-    <ClInclude Include="..\..\absl\strings\internal\charconv_bigint.h" />
-    <ClInclude Include="..\..\absl\strings\internal\charconv_parse.h" />
-    <ClInclude Include="..\..\absl\strings\internal\char_map.h" />
-    <ClInclude Include="..\..\absl\strings\internal\memutil.h" />
-    <ClInclude Include="..\..\absl\strings\internal\ostringstream.h" />
-    <ClInclude Include="..\..\absl\strings\internal\resize_uninitialized.h" />
-    <ClInclude Include="..\..\absl\strings\internal\stl_type_traits.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\arg.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\bind.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\checker.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\extension.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\float_conversion.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\output.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_format\parser.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_join_internal.h" />
-    <ClInclude Include="..\..\absl\strings\internal\str_split_internal.h" />
-    <ClInclude Include="..\..\absl\strings\internal\utf8.h" />
     <ClInclude Include="..\..\absl\strings\match.h" />
     <ClInclude Include="..\..\absl\strings\numbers.h" />
     <ClInclude Include="..\..\absl\strings\string_view.h" />
@@ -43,22 +29,103 @@
     <ClInclude Include="..\..\absl\strings\substitute.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\absl\strings\internal\str_format\arg.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\bind.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\checker.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\extension.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\float_conversion.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\output.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_format\parser.h" />
+    <ClInclude Include="..\..\absl\strings\internal\charconv_bigint.h" />
+    <ClInclude Include="..\..\absl\strings\internal\charconv_parse.h" />
+    <ClInclude Include="..\..\absl\strings\internal\char_map.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_functions.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_handle.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_info.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_sample_token.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_statistics.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_update_scope.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cordz_update_tracker.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cord_internal.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cord_rep_flat.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cord_rep_ring.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cord_rep_ring_reader.h" />
+    <ClInclude Include="..\..\absl\strings\internal\escaping.h" />
+    <ClInclude Include="..\..\absl\strings\internal\memutil.h" />
+    <ClInclude Include="..\..\absl\strings\internal\ostringstream.h" />
+    <ClInclude Include="..\..\absl\strings\internal\pow10_helper.h" />
+    <ClInclude Include="..\..\absl\strings\internal\resize_uninitialized.h" />
+    <ClInclude Include="..\..\absl\strings\internal\stl_type_traits.h" />
+    <ClInclude Include="..\..\absl\strings\internal\string_constant.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_join_internal.h" />
+    <ClInclude Include="..\..\absl\strings\internal\str_split_internal.h" />
+    <ClInclude Include="..\..\absl\strings\internal\utf8.h" />
+    <ClCompile Include="..\..\absl\strings\internal\str_format\arg.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\bind.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\extension.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\float_conversion.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\output.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\parser.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_bigint.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_parse.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_functions.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_handle.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_info.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_sample_token.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_internal.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_rep_ring.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\escaping.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\memutil.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\ostringstream.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\pow10_helper.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\utf8.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="..\..\absl\strings\ascii.cc" />
     <ClCompile Include="..\..\absl\strings\charconv.cc" />
+    <ClCompile Include="..\..\absl\strings\cord.cc" />
     <ClCompile Include="..\..\absl\strings\escaping.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\charconv_bigint.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\charconv_parse.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\memutil.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\ostringstream.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\arg.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\bind.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\extension.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\float_conversion.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\output.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\str_format\parser.cc" />
-    <ClCompile Include="..\..\absl\strings\internal\utf8.cc" />
     <ClCompile Include="..\..\absl\strings\match.cc" />
     <ClCompile Include="..\..\absl\strings\numbers.cc" />
+    <ClCompile Include="..\..\absl\strings\string_view.cc" />
     <ClCompile Include="..\..\absl\strings\str_cat.cc" />
     <ClCompile Include="..\..\absl\strings\str_replace.cc" />
     <ClCompile Include="..\..\absl\strings\str_split.cc" />

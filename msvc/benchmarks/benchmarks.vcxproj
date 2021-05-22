@@ -12,16 +12,26 @@
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
     <ClCompile Include="..\..\absl\algorithm\equal_benchmark.cc" />
+    <ClCompile Include="..\..\absl\base\internal\periodic_sampler_benchmark.cc" />
+    <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc" />
+    <ClCompile Include="..\..\absl\base\internal\strerror_benchmark.cc" />
     <ClCompile Include="..\..\absl\base\internal\thread_identity_benchmark.cc" />
+    <ClCompile Include="..\..\absl\container\internal\layout_benchmark.cc" />
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_benchmark.cc" />
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_probe_benchmark.cc" />
+    <ClCompile Include="..\..\absl\container\btree_benchmark.cc" />
     <ClCompile Include="..\..\absl\container\fixed_array_benchmark.cc" />
     <ClCompile Include="..\..\absl\container\inlined_vector_benchmark.cc" />
+    <ClCompile Include="..\..\absl\flags\flag_benchmark.cc" />
+    <ClCompile Include="..\..\absl\functional\function_ref_benchmark.cc" />
+    <ClCompile Include="..\..\absl\hash\hash_benchmark.cc" />
     <ClCompile Include="..\..\absl\numeric\int128_benchmark.cc" />
-    <ClCompile Include="..\..\absl\strings\ascii_benchmark.cc" />
-    <ClCompile Include="..\..\absl\strings\charconv_benchmark.cc" />
-    <ClCompile Include="..\..\absl\strings\escaping_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\internal\char_map_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\internal\memutil_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\internal\ostringstream_benchmark.cc" />
+    <ClCompile Include="..\..\absl\strings\ascii_benchmark.cc" />
+    <ClCompile Include="..\..\absl\strings\charconv_benchmark.cc" />
+    <ClCompile Include="..\..\absl\strings\escaping_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\numbers_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\string_view_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\str_cat_benchmark.cc" />
@@ -29,13 +39,13 @@
     <ClCompile Include="..\..\absl\strings\str_replace_benchmark.cc" />
     <ClCompile Include="..\..\absl\strings\str_split_benchmark.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_benchmark.cc" />
+    <ClCompile Include="..\..\absl\synchronization\blocking_counter_benchmark.cc" />
     <ClCompile Include="..\..\absl\synchronization\mutex_benchmark.cc" />
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc" />
     <ClCompile Include="..\..\absl\time\civil_time_benchmark.cc" />
     <ClCompile Include="..\..\absl\time\clock_benchmark.cc" />
     <ClCompile Include="..\..\absl\time\duration_benchmark.cc" />
     <ClCompile Include="..\..\absl\time\format_benchmark.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc" />
-    <ClCompile Include="..\..\absl\time\internal\test_util.cc" />
     <ClCompile Include="..\..\absl\time\time_benchmark.cc" />
     <ClCompile Include="..\..\absl\types\variant_benchmark.cc" />
   </ItemGroup>
@@ -67,8 +77,5 @@
     <ProjectReference Include="..\types\types.vcxproj">
       <Project>{e1c9d158-f541-4a35-8cd5-33545d45fb89}</Project>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\absl\time\internal\test_util.h" />
   </ItemGroup>
 </Project>

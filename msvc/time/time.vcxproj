@@ -13,6 +13,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\time\civil_time.h" />
     <ClInclude Include="..\..\absl\time\clock.h" />
+    <ClInclude Include="..\..\absl\time\time.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\civil_time.h" />
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\civil_time_detail.h" />
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\time_zone.h" />
@@ -24,28 +27,42 @@
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_libc.h" />
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_posix.h" />
     <ClInclude Include="..\..\absl\time\internal\cctz\src\tzfile.h" />
-    <ClInclude Include="..\..\absl\time\time.h" />
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_detail.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_if.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_impl.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_info.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_libc.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_posix.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\zone_info_source.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\time\civil_time.cc" />
     <ClCompile Include="..\..\absl\time\clock.cc" />
     <ClCompile Include="..\..\absl\time\duration.cc" />
     <ClCompile Include="..\..\absl\time\format.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_detail.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_if.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_impl.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_info.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_libc.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_posix.cc" />
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\zone_info_source.cc" />
     <ClCompile Include="..\..\absl\time\time.cc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\absl\time\internal\get_current_time_chrono.inc" />
-    <None Include="..\..\absl\time\internal\get_current_time_posix.inc" />
-    <None Include="..\..\absl\time\internal\zoneinfo.inc" />
   </ItemGroup>
 </Project>

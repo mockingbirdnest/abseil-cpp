@@ -12,13 +12,24 @@
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
     <ClInclude Include="..\..\absl\hash\hash.h" />
+    <ClInclude Include="..\..\absl\hash\hash_testing.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\absl\hash\internal\city.h" />
     <ClInclude Include="..\..\absl\hash\internal\hash.h" />
     <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\absl\hash\internal\city.cc" />
-    <ClCompile Include="..\..\absl\hash\internal\hash.cc" />
-    <ClCompile Include="..\..\absl\hash\internal\print_hash_of.cc" />
+    <ClInclude Include="..\..\absl\hash\internal\wyhash.h" />
+    <ClCompile Include="..\..\absl\hash\internal\city.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\hash.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\print_hash_of.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\wyhash.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
 </Project>

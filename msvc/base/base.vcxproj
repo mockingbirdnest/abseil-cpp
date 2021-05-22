@@ -15,46 +15,88 @@
     <ClInclude Include="..\..\absl\base\call_once.h" />
     <ClInclude Include="..\..\absl\base\casts.h" />
     <ClInclude Include="..\..\absl\base\config.h" />
+    <ClInclude Include="..\..\absl\base\const_init.h" />
     <ClInclude Include="..\..\absl\base\dynamic_annotations.h" />
+    <ClInclude Include="..\..\absl\base\log_severity.h" />
+    <ClInclude Include="..\..\absl\base\macros.h" />
+    <ClInclude Include="..\..\absl\base\optimization.h" />
+    <ClInclude Include="..\..\absl\base\options.h" />
+    <ClInclude Include="..\..\absl\base\policy_checks.h" />
+    <ClInclude Include="..\..\absl\base\port.h" />
+    <ClInclude Include="..\..\absl\base\thread_annotations.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\absl\base\internal\atomic_hook.h" />
-    <ClInclude Include="..\..\absl\base\internal\bits.h" />
     <ClInclude Include="..\..\absl\base\internal\cycleclock.h" />
     <ClInclude Include="..\..\absl\base\internal\direct_mmap.h" />
+    <ClInclude Include="..\..\absl\base\internal\dynamic_annotations.h" />
     <ClInclude Include="..\..\absl\base\internal\endian.h" />
+    <ClInclude Include="..\..\absl\base\internal\errno_saver.h" />
+    <ClInclude Include="..\..\absl\base\internal\exponential_biased.h" />
+    <ClInclude Include="..\..\absl\base\internal\fast_type_id.h" />
     <ClInclude Include="..\..\absl\base\internal\hide_ptr.h" />
     <ClInclude Include="..\..\absl\base\internal\identity.h" />
     <ClInclude Include="..\..\absl\base\internal\inline_variable.h" />
     <ClInclude Include="..\..\absl\base\internal\invoke.h" />
     <ClInclude Include="..\..\absl\base\internal\low_level_alloc.h" />
     <ClInclude Include="..\..\absl\base\internal\low_level_scheduling.h" />
+    <ClInclude Include="..\..\absl\base\internal\periodic_sampler.h" />
     <ClInclude Include="..\..\absl\base\internal\per_thread_tls.h" />
     <ClInclude Include="..\..\absl\base\internal\pretty_function.h" />
     <ClInclude Include="..\..\absl\base\internal\raw_logging.h" />
     <ClInclude Include="..\..\absl\base\internal\scheduling_mode.h" />
+    <ClInclude Include="..\..\absl\base\internal\scoped_set_env.h" />
     <ClInclude Include="..\..\absl\base\internal\spinlock.h" />
     <ClInclude Include="..\..\absl\base\internal\spinlock_wait.h" />
+    <ClInclude Include="..\..\absl\base\internal\strerror.h" />
     <ClInclude Include="..\..\absl\base\internal\sysinfo.h" />
+    <ClInclude Include="..\..\absl\base\internal\thread_annotations.h" />
     <ClInclude Include="..\..\absl\base\internal\thread_identity.h" />
     <ClInclude Include="..\..\absl\base\internal\throw_delegate.h" />
     <ClInclude Include="..\..\absl\base\internal\tsan_mutex_interface.h" />
     <ClInclude Include="..\..\absl\base\internal\unaligned_access.h" />
     <ClInclude Include="..\..\absl\base\internal\unscaledcycleclock.h" />
-    <ClInclude Include="..\..\absl\base\log_severity.h" />
-    <ClInclude Include="..\..\absl\base\macros.h" />
-    <ClInclude Include="..\..\absl\base\optimization.h" />
-    <ClInclude Include="..\..\absl\base\policy_checks.h" />
-    <ClInclude Include="..\..\absl\base\port.h" />
-    <ClInclude Include="..\..\absl\base\thread_annotations.h" />
+    <ClCompile Include="..\..\absl\base\internal\cycleclock.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\exponential_biased.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\low_level_alloc.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\periodic_sampler.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\raw_logging.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\scoped_set_env.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\spinlock.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\spinlock_wait.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\strerror.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\sysinfo.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\thread_identity.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\throw_delegate.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\unscaledcycleclock.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\base\internal\cycleclock.cc" />
-    <ClCompile Include="..\..\absl\base\internal\low_level_alloc.cc" />
-    <ClCompile Include="..\..\absl\base\internal\raw_logging.cc" />
-    <ClCompile Include="..\..\absl\base\internal\spinlock.cc" />
-    <ClCompile Include="..\..\absl\base\internal\spinlock_wait.cc" />
-    <ClCompile Include="..\..\absl\base\internal\sysinfo.cc" />
-    <ClCompile Include="..\..\absl\base\internal\thread_identity.cc" />
-    <ClCompile Include="..\..\absl\base\internal\throw_delegate.cc" />
-    <ClCompile Include="..\..\absl\base\internal\unscaledcycleclock.cc" />
+    <ClCompile Include="..\..\absl\base\log_severity.cc" />
   </ItemGroup>
 </Project>

@@ -9,10 +9,13 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{3ac029ca-875a-46b8-9922-8fb78a852083}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\utility\utility.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

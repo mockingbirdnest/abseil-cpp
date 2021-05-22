@@ -9,30 +9,42 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{fe9ef13c-3cbd-4bdc-b2d9-2ab3cc13fa30}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\hash\hash.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\city.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\hash.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\..\absl\hash\hash_testing.h">
+       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\hash\internal\city.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\hash\internal\hash.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\hash\internal\print_hash_of.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="..\..\absl\hash\internal\city.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\hash.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\wyhash.h">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\city.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\hash.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\print_hash_of.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\internal\wyhash.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

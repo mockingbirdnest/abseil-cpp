@@ -9,107 +9,101 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{589e3c10-fc31-460c-bfce-16b59448a8d7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\time\civil_time.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\clock.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\time.h">
-      <Filter>Header Files</Filter>
+       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\civil_time.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\civil_time_detail.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\time_zone.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\include\cctz\zone_info_source.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_if.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_impl.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_info.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_libc.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_posix.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\tzfile.h">
-      <Filter>Source Files</Filter>
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\civil_time_detail.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_format.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_if.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_impl.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_info.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_libc.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_lookup.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_posix.cc">
+       <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\zone_info_source.cc">
+       <Filter>Internal Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\time\civil_time.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\clock.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\duration.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\format.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\time.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_detail.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_if.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_impl.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_info.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_libc.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_posix.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\cctz\src\zone_info_source.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\absl\time\internal\get_current_time_chrono.inc">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="..\..\absl\time\internal\get_current_time_posix.inc">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="..\..\absl\time\internal\zoneinfo.inc">
-      <Filter>Source Files</Filter>
-    </None>
+    <ClInclude Include="..\..\absl\time\civil_time.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\clock.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\duration.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\format.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\time\time.cc">
+       <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

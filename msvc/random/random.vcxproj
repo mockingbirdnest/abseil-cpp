@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{A83F94F5-7CE8-4759-B4CE-0B133E102FFE}</ProjectGuid>
+    <RootNamespace>algorithm</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\bernoulli_distribution.h" />
+    <ClInclude Include="..\..\absl\random\beta_distribution.h" />
+    <ClInclude Include="..\..\absl\random\bit_gen_ref.h" />
+    <ClInclude Include="..\..\absl\random\discrete_distribution.h" />
+    <ClInclude Include="..\..\absl\random\distributions.h" />
+    <ClInclude Include="..\..\absl\random\exponential_distribution.h" />
+    <ClInclude Include="..\..\absl\random\gaussian_distribution.h" />
+    <ClInclude Include="..\..\absl\random\log_uniform_int_distribution.h" />
+    <ClInclude Include="..\..\absl\random\mocking_bit_gen.h" />
+    <ClInclude Include="..\..\absl\random\mock_distributions.h" />
+    <ClInclude Include="..\..\absl\random\poisson_distribution.h" />
+    <ClInclude Include="..\..\absl\random\random.h" />
+    <ClInclude Include="..\..\absl\random\seed_gen_exception.h" />
+    <ClInclude Include="..\..\absl\random\seed_sequences.h" />
+    <ClInclude Include="..\..\absl\random\uniform_int_distribution.h" />
+    <ClInclude Include="..\..\absl\random\uniform_real_distribution.h" />
+    <ClInclude Include="..\..\absl\random\zipf_distribution.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\internal\chi_square.h" />
+    <ClInclude Include="..\..\absl\random\internal\distribution_caller.h" />
+    <ClInclude Include="..\..\absl\random\internal\explicit_seed_seq.h" />
+    <ClInclude Include="..\..\absl\random\internal\fastmath.h" />
+    <ClInclude Include="..\..\absl\random\internal\fast_uniform_bits.h" />
+    <ClInclude Include="..\..\absl\random\internal\generate_real.h" />
+    <ClInclude Include="..\..\absl\random\internal\iostream_state_saver.h" />
+    <ClInclude Include="..\..\absl\random\internal\mock_helpers.h" />
+    <ClInclude Include="..\..\absl\random\internal\mock_overload_set.h" />
+    <ClInclude Include="..\..\absl\random\internal\nanobenchmark.h" />
+    <ClInclude Include="..\..\absl\random\internal\nonsecure_base.h" />
+    <ClInclude Include="..\..\absl\random\internal\pcg_engine.h" />
+    <ClInclude Include="..\..\absl\random\internal\platform.h" />
+    <ClInclude Include="..\..\absl\random\internal\pool_urbg.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen_detect.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen_engine.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen_hwaes.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen_slow.h" />
+    <ClInclude Include="..\..\absl\random\internal\randen_traits.h" />
+    <ClInclude Include="..\..\absl\random\internal\salted_seed_seq.h" />
+    <ClInclude Include="..\..\absl\random\internal\seed_material.h" />
+    <ClInclude Include="..\..\absl\random\internal\sequence_urbg.h" />
+    <ClInclude Include="..\..\absl\random\internal\traits.h" />
+    <ClInclude Include="..\..\absl\random\internal\uniform_helper.h" />
+    <ClInclude Include="..\..\absl\random\internal\wide_multiply.h" />
+    <ClCompile Include="..\..\absl\random\internal\chi_square.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\gaussian_distribution_gentables.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\nanobenchmark.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\pool_urbg.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_benchmarks.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_detect.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_hwaes.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_round_keys.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_slow.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\seed_material.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\random\benchmarks.cc" />
+    <ClCompile Include="..\..\absl\random\discrete_distribution.cc" />
+    <ClCompile Include="..\..\absl\random\gaussian_distribution.cc" />
+    <ClCompile Include="..\..\absl\random\seed_gen_exception.cc" />
+    <ClCompile Include="..\..\absl\random\seed_sequences.cc" />
+  </ItemGroup>
+</Project>
