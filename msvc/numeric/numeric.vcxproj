@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{36FCB0F6-A293-497F-8478-E955D175F2D0}</ProjectGuid>
+    <RootNamespace>numeric</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\numeric\bits.h" />
+    <ClInclude Include="..\..\absl\numeric\int128.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\numeric\internal\bits.h" />
+    <ClInclude Include="..\..\absl\numeric\internal\representation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\numeric\int128.cc" />
+  </ItemGroup>
+</Project>
