@@ -69,17 +69,17 @@ ZoneInfoSourceFactory default_factory = DefaultFactory;
 #pragma comment(                                                                                                         \
     linker,                                                                                                              \
     "/alternatename:?zone_info_source_factory@cctz_extension@time_internal@" ABSL_INTERNAL_MANGLED_NS                    \
-    "@@3P6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                 \
+    "@@3P6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                 \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                   \
     "@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@" ABSL_INTERNAL_MANGLED_BACKREFERENCE      \
-    "@ABV?$function@$$A6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
+    "@ABV?$function@$$A6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                   \
     "@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z@" ABSL_INTERNAL_MANGLED_BACKREFERENCE \
     "@@ZA=?default_factory@cctz_extension@time_internal@" ABSL_INTERNAL_MANGLED_NS                                       \
-    "@@3P6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                 \
+    "@@3P6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                 \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                   \
     "@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@" ABSL_INTERNAL_MANGLED_BACKREFERENCE      \
-    "@ABV?$function@$$A6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
+    "@ABV?$function@$$A6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                   \
     "@@@std@@@std@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z@" ABSL_INTERNAL_MANGLED_BACKREFERENCE \
     "@@ZA")
@@ -88,17 +88,17 @@ ZoneInfoSourceFactory default_factory = DefaultFactory;
 #pragma comment(                                                                                                          \
     linker,                                                                                                               \
     "/alternatename:?zone_info_source_factory@cctz_extension@time_internal@" ABSL_INTERNAL_MANGLED_NS                     \
-    "@@3P6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                  \
+    "@@3P6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                  \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                    \
     "@@@std@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@" ABSL_INTERNAL_MANGLED_BACKREFERENCE      \
-    "@AEBV?$function@$$A6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
+    "@AEBV?$function@$$A6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                    \
     "@@@std@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z@" ABSL_INTERNAL_MANGLED_BACKREFERENCE \
     "@@ZEA=?default_factory@cctz_extension@time_internal@" ABSL_INTERNAL_MANGLED_NS                                       \
-    "@@3P6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                  \
+    "@@3P6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                  \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                    \
     "@@@std@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@" ABSL_INTERNAL_MANGLED_BACKREFERENCE      \
-    "@AEBV?$function@$$A6A?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
+    "@AEBV?$function@$$A6Q?AV?$unique_ptr@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                   \
     "@@U?$default_delete@VZoneInfoSource@cctz@time_internal@" ABSL_INTERNAL_MANGLED_NS                                    \
     "@@@std@@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z@" ABSL_INTERNAL_MANGLED_BACKREFERENCE \
     "@@ZEA")
