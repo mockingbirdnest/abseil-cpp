@@ -559,8 +559,7 @@ static_assert(ABSL_INTERNAL_INLINE_NAMESPACE_STR[0] != 'h' ||
 #endif
 
 #ifdef __has_include
-#if __has_include(<string_view>) && defined(__cplusplus) && \
-    __cplusplus >= 201703L
+#if __has_include(<string_view>)
 #define ABSL_HAVE_STD_STRING_VIEW 1
 #endif
 #endif
