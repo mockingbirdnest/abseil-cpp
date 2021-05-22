@@ -73,12 +73,12 @@ absl_cc_library(
     strings_internal
   HDRS
     "internal/char_map.h"
-    "internal/escaping.cc"
     "internal/escaping.h"
     "internal/ostringstream.h"
     "internal/resize_uninitialized.h"
     "internal/utf8.h"
   SRCS
+    "internal/escaping.cc"
     "internal/ostringstream.cc"
     "internal/utf8.cc"
   COPTS
