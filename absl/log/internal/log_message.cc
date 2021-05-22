@@ -438,12 +438,12 @@ LogMessage& LogMessage::operator<<(wchar_t v) {
   return *this;
 }
 
-LogMessage& LogMessage::operator<<(std::ostream& (*m)(std::ostream& os)) {
+LogMessage& LogMessage::operator<<(std::ostream& (__CLRCALL_OR_CDECL *m)(std::ostream& os)) {
   OstreamView view(*data_);
   data_->manipulated << m;
   return *this;
 }
-LogMessage& LogMessage::operator<<(std::ios_base& (*m)(std::ios_base& os)) {
+LogMessage& LogMessage::operator<<(std::ios_base& (__CLRCALL_OR_CDECL *m)(std::ios_base& os)) {
   OstreamView view(*data_);
   data_->manipulated << m;
   return *this;
