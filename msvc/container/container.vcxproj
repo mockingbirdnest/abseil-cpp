@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4F7E6A40-25EA-4E7F-9849-9C8D4463268D}</ProjectGuid>
+    <RootNamespace>container</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\container\btree_map.h" />
+    <ClInclude Include="..\..\absl\container\btree_set.h" />
+    <ClInclude Include="..\..\absl\container\btree_test.h" />
+    <ClInclude Include="..\..\absl\container\fixed_array.h" />
+    <ClInclude Include="..\..\absl\container\flat_hash_map.h" />
+    <ClInclude Include="..\..\absl\container\flat_hash_set.h" />
+    <ClInclude Include="..\..\absl\container\inlined_vector.h" />
+    <ClInclude Include="..\..\absl\container\node_hash_map.h" />
+    <ClInclude Include="..\..\absl\container\node_hash_set.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\container\internal\btree.h" />
+    <ClInclude Include="..\..\absl\container\internal\btree_container.h" />
+    <ClInclude Include="..\..\absl\container\internal\common.h" />
+    <ClInclude Include="..\..\absl\container\internal\compressed_tuple.h" />
+    <ClInclude Include="..\..\absl\container\internal\container_memory.h" />
+    <ClInclude Include="..\..\absl\container\internal\counting_allocator.h" />
+    <ClInclude Include="..\..\absl\container\internal\hashtablez_sampler.h" />
+    <ClInclude Include="..\..\absl\container\internal\hashtable_debug.h" />
+    <ClInclude Include="..\..\absl\container\internal\hashtable_debug_hooks.h" />
+    <ClInclude Include="..\..\absl\container\internal\hash_function_defaults.h" />
+    <ClInclude Include="..\..\absl\container\internal\hash_policy_traits.h" />
+    <ClInclude Include="..\..\absl\container\internal\have_sse.h" />
+    <ClInclude Include="..\..\absl\container\internal\inlined_vector.h" />
+    <ClInclude Include="..\..\absl\container\internal\layout.h" />
+    <ClInclude Include="..\..\absl\container\internal\node_hash_policy.h" />
+    <ClInclude Include="..\..\absl\container\internal\raw_hash_map.h" />
+    <ClInclude Include="..\..\absl\container\internal\raw_hash_set.h" />
+    <ClInclude Include="..\..\absl\container\internal\tracked.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_modifiers_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h" />
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+</Project>

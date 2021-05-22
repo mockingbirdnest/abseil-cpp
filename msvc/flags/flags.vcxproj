@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{531D3279-EB26-4D98-9206-7F548C171E4A}</ProjectGuid>
+    <RootNamespace>algorithm</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\flags\commandlineflag.h" />
+    <ClInclude Include="..\..\absl\flags\config.h" />
+    <ClInclude Include="..\..\absl\flags\declare.h" />
+    <ClInclude Include="..\..\absl\flags\flag.h" />
+    <ClInclude Include="..\..\absl\flags\marshalling.h" />
+    <ClInclude Include="..\..\absl\flags\parse.h" />
+    <ClInclude Include="..\..\absl\flags\reflection.h" />
+    <ClInclude Include="..\..\absl\flags\usage.h" />
+    <ClInclude Include="..\..\absl\flags\usage_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\flags\internal\commandlineflag.h" />
+    <ClInclude Include="..\..\absl\flags\internal\flag.h" />
+    <ClInclude Include="..\..\absl\flags\internal\parse.h" />
+    <ClInclude Include="..\..\absl\flags\internal\path_util.h" />
+    <ClInclude Include="..\..\absl\flags\internal\private_handle_accessor.h" />
+    <ClInclude Include="..\..\absl\flags\internal\program_name.h" />
+    <ClInclude Include="..\..\absl\flags\internal\registry.h" />
+    <ClInclude Include="..\..\absl\flags\internal\sequence_lock.h" />
+    <ClInclude Include="..\..\absl\flags\internal\usage.h" />
+    <ClCompile Include="..\..\absl\flags\internal\commandlineflag.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\flag.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\private_handle_accessor.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\program_name.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\usage.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\flags\commandlineflag.cc" />
+    <ClCompile Include="..\..\absl\flags\flag.cc" />
+    <ClCompile Include="..\..\absl\flags\marshalling.cc" />
+    <ClCompile Include="..\..\absl\flags\parse.cc" />
+    <ClCompile Include="..\..\absl\flags\reflection.cc" />
+    <ClCompile Include="..\..\absl\flags\usage.cc" />
+    <ClCompile Include="..\..\absl\flags\usage_config.cc" />
+  </ItemGroup>
+</Project>
