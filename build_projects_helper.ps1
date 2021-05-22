@@ -30,9 +30,9 @@ Get-ChildItem "$dir\*" -Include *.cc -Exclude *_benchmark.cc,*_test.cc,*_testing
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filterssources +=
-      "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
+      "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <Filter>Source Files</Filter>`r`n" +
-      "    </ClInclude>`r`n"
+      "    </ClCompile>`r`n"
   $vcxprojsources +=
       "    <ClCompile Include=`"$msvcrelativepath`" />`r`n"
 }
@@ -45,9 +45,9 @@ Get-ChildItem "$dir\*" -Recurse -Include *_benchmark.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersbenchmarks +=
-      "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
+      "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <Filter>Source Files</Filter>`r`n" +
-      "    </ClInclude>`r`n"
+      "    </ClCompile>`r`n"
   $vcxprojbenchmarks +=
       "    <ClCompile Include=`"$msvcrelativepath`" />`r`n"
 }
@@ -72,9 +72,9 @@ Get-ChildItem "$dir\*" -Recurse -Include *_test.cc,*_testing.cc,*_test_*.cc,test
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filterstests +=
-      "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
+      "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <Filter>Source Files</Filter>`r`n" +
-      "    </ClInclude>`r`n"
+      "    </ClCompile>`r`n"
   $vcxprojtests +=
       "    <ClCompile Include=`"$msvcrelativepath`" />`r`n"
 }
@@ -97,9 +97,9 @@ Get-ChildItem "$dir\*\*" -Recurse -Include *.cc -Exclude *_benchmark.cc,*_test.c
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersinternals +=
-      "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
+      "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <Filter>Internal Files</Filter>`r`n" +
-      "    </ClInclude>`r`n"
+      "    </ClCompile>`r`n"
   $vcxprojinternals +=
       "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <ObjectFileName>`$(IntDir)internal/</ObjectFileName>`r`n" +
