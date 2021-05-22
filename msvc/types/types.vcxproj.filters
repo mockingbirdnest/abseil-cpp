@@ -69,14 +69,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\types\bad_any_cast.cc">
+    <ClCompile Include="..\..\absl\types\bad_any_cast.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\types\bad_optional_access.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\bad_optional_access.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\types\bad_variant_access.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\bad_variant_access.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

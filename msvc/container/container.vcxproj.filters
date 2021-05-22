@@ -121,14 +121,14 @@
     <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\hashtablez_sampler.cc">
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\container\internal\raw_hash_set.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

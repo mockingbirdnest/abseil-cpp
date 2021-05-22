@@ -22,6 +22,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\absl\hash\hash.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\hash\hash_testing.h">
+       <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\absl\hash\internal\city.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
@@ -34,17 +42,17 @@
     <ClInclude Include="..\..\absl\hash\internal\wyhash.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\city.cc">
+    <ClCompile Include="..\..\absl\hash\internal\city.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\hash.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\hash.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\print_hash_of.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\print_hash_of.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\hash\internal\wyhash.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\wyhash.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

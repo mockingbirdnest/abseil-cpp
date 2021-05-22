@@ -145,55 +145,55 @@
     <ClInclude Include="..\..\absl\random\internal\wide_multiply.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\chi_square.cc">
+    <ClCompile Include="..\..\absl\random\internal\chi_square.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\gaussian_distribution_gentables.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\gaussian_distribution_gentables.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\nanobenchmark.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\nanobenchmark.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\pool_urbg.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\pool_urbg.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen_benchmarks.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_benchmarks.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen_detect.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_detect.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen_hwaes.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_hwaes.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen_round_keys.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_round_keys.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\randen_slow.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_slow.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\internal\seed_material.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\seed_material.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\random\benchmarks.cc">
+    <ClCompile Include="..\..\absl\random\benchmarks.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\discrete_distribution.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\discrete_distribution.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\gaussian_distribution.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\gaussian_distribution.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\seed_gen_exception.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\seed_gen_exception.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\random\seed_sequences.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\seed_sequences.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>

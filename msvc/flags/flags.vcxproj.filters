@@ -70,43 +70,43 @@
     <ClInclude Include="..\..\absl\flags\internal\usage.h">
        <Filter>Internal Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\flags\internal\commandlineflag.cc">
+    <ClCompile Include="..\..\absl\flags\internal\commandlineflag.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\internal\flag.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\flag.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\internal\private_handle_accessor.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\private_handle_accessor.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\internal\program_name.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\program_name.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\internal\usage.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\usage.cc">
        <Filter>Internal Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\flags\commandlineflag.cc">
+    <ClCompile Include="..\..\absl\flags\commandlineflag.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\flag.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\marshalling.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\marshalling.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\parse.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\parse.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\reflection.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\reflection.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\usage.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\usage.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\flags\usage_config.cc">
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\usage_config.cc">
        <Filter>Source Files</Filter>
-    </ClInclude>
+    </ClCompile>
   </ItemGroup>
 </Project>
