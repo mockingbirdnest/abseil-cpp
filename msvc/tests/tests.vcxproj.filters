@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{4106abfd-d714-4e37-930a-b8ef115c75d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\algorithm\algorithm_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\algorithm\container_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\atomic_hook_test_helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\base\internal\atomic_hook_test_helper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\base\internal\endian_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\errno_saver_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\exception_safety_testing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\base\internal\exception_safety_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\base\internal\exception_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\base\internal\exponential_biased_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\fast_type_id_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\base\internal\inline_variable_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\base\internal\periodic_sampler_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\scoped_set_env_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\strerror_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\sysinfo_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\thread_identity_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\unique_small_name_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\bit_cast_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\call_once_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\exception_safety_testing_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\inline_variable_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\inline_variable_test_a.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\inline_variable_test_b.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\invoke_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\log_severity_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\optimization_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\raw_logging_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\spinlock_test_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\throw_delegate_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\cleanup\cleanup_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\compressed_tuple_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\container_memory_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_function_defaults_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_generator_testing.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\container\internal\hash_generator_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\container\internal\hash_policy_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\container\internal\hash_policy_testing_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_policy_traits_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\layout_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\node_hash_policy_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_allocator_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\test_instance_tracker.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\container\internal\test_instance_tracker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\container\internal\test_instance_tracker_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\unordered_map_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\unordered_set_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\btree_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\fixed_array_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\fixed_array_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\flat_hash_map_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\flat_hash_set_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\inlined_vector_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\inlined_vector_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\node_hash_map_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\node_hash_set_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\demangle_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\stack_consumption_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\leak_check_fail_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\leak_check_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\path_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\program_name_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\sequence_lock_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\commandlineflag_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\config_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag_test_defs.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\marshalling_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\usage_config_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\bind_front_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\function_ref_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\city_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\wyhash_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\hash_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\hash\hash_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\memory\memory_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\memory\memory_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\meta\type_traits_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\bits_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\int128_stream_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\int128_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\chi_square_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\distribution_test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\random\internal\distribution_test_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\random\internal\distribution_test_util_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\explicit_seed_seq_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\fastmath_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\fast_uniform_bits_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\generate_real_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\iostream_state_saver_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\nonsecure_base_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\pcg_engine_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\pool_urbg_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_engine_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_slow_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\salted_seed_seq_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\seed_material_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\traits_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\uniform_helper_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\wide_multiply_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\bernoulli_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\beta_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\bit_gen_ref_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\discrete_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\distributions_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\examples_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\exponential_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\gaussian_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\generators_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\log_uniform_int_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\mocking_bit_gen_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\mock_distributions_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\poisson_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\seed_sequences_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\uniform_int_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\uniform_real_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\zipf_distribution_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\statusor_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\status_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\arg_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\bind_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\checker_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\convert_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\extension_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\output_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_bigint_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_parse_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\char_map_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_functions_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_handle_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_info_statistics_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_info_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_sample_token_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_update_scope_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_update_tracker_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\strings\internal\escaping_test_common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\strings\internal\memutil_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\strings\internal\numbers_test_common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\strings\internal\ostringstream_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\pow10_helper_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\resize_uninitialized_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\string_constant_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\utf8_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\ascii_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\charconv_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cordz_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\strings\cord_ring_reader_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cord_ring_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cord_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\strings\escaping_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\match_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\numbers_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\string_view_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\strip_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_cat_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_format_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_join_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_replace_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_split_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\substitute_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\barrier_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\blocking_counter_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\mutex_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\notification_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\time\internal\test_util.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\time\civil_time_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\clock_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\duration_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\format_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\time_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\time_zone_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\absl\types\internal\conformance_testing.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\types\internal\conformance_testing_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\any_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\any_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\compare_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\optional_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\optional_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\span_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\variant_exception_safety_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\variant_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\utility\utility_test.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\absl\strings\testdata\getline-1.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\absl\strings\testdata\getline-2.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

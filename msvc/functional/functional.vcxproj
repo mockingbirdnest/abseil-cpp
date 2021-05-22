@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C8D023EB-7C85-477D-9F07-4EB1DCD72AC4}</ProjectGuid>
+    <RootNamespace>algorithm</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\bind_front.h" />
+    <ClInclude Include="..\..\absl\functional\function_ref.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\internal\front_binder.h" />
+    <ClInclude Include="..\..\absl\functional\internal\function_ref.h" />
+  </ItemGroup>
+</Project>

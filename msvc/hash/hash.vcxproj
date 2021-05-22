@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4A99CB40-9E88-4374-A67F-3C15D6B61E6B}</ProjectGuid>
+    <RootNamespace>hash</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\hash\hash.h" />
+    <ClInclude Include="..\..\absl\hash\hash_testing.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\hash\internal\city.h" />
+    <ClInclude Include="..\..\absl\hash\internal\hash.h" />
+    <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h" />
+    <ClInclude Include="..\..\absl\hash\internal\wyhash.h" />
+    <ClCompile Include="..\..\absl\hash\internal\city.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\hash.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\print_hash_of.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\wyhash.cc">
+       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+</Project>
