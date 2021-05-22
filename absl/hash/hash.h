@@ -419,7 +419,7 @@ class HashState : public hash_internal::HashStateBase<HashState> {
   template <typename T>
   static HashState RunCombineUnorderedImpl(
       HashState state,
-      absl::FunctionRef<void(HashState, absl::FunctionRef<void(HashState&)>)>
+      std::function<void(HashState, absl::FunctionRef<void(HashState&)>)> const&
           f) {
     // Note that this implementation assumes that inner_state and outer_state
     // are the same type.  This isn't true in the SpyHash case, but SpyHash
@@ -457,7 +457,7 @@ class HashState : public hash_internal::HashStateBase<HashState> {
   void (*combine_raw_)(void*, uint64_t);
   HashState (*run_combine_unordered_)(
       HashState state,
-      absl::FunctionRef<void(HashState, absl::FunctionRef<void(HashState&)>)>);
+      std::function<void(HashState, absl::FunctionRef<void(HashState&)>)> const&);
 };
 
 ABSL_NAMESPACE_END
