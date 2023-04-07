@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{BC3A5306-CA46-41E6-83C5-19D828BA7778}</ProjectGuid>
     <RootNamespace>time</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
@@ -28,34 +31,34 @@
     <ClInclude Include="..\..\absl\time\internal\cctz\src\time_zone_posix.h" />
     <ClInclude Include="..\..\absl\time\internal\cctz\src\tzfile.h" />
     <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_detail.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_fixed.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_if.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_impl.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_info.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_libc.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_posix.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\zone_info_source.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

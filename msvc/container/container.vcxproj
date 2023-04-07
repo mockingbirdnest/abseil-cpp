@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{4F7E6A40-25EA-4E7F-9849-9C8D4463268D}</ProjectGuid>
     <RootNamespace>container</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
@@ -49,13 +52,13 @@
     <ClInclude Include="..\..\absl\container\internal\unordered_set_members_test.h" />
     <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h" />
     <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\container\internal\raw_hash_set.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
 </Project>

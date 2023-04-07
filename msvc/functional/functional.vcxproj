@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{C8D023EB-7C85-477D-9F07-4EB1DCD72AC4}</ProjectGuid>
     <RootNamespace>algorithm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>

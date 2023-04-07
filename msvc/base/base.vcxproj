@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{61CEED69-E6FB-4F61-AA59-25640ADAB4E0}</ProjectGuid>
     <RootNamespace>base</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
@@ -57,43 +60,43 @@
     <ClInclude Include="..\..\absl\base\internal\unaligned_access.h" />
     <ClInclude Include="..\..\absl\base\internal\unscaledcycleclock.h" />
     <ClCompile Include="..\..\absl\base\internal\cycleclock.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\exponential_biased.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\low_level_alloc.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\periodic_sampler.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\raw_logging.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\scoped_set_env.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\spinlock.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\spinlock_wait.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\strerror.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\sysinfo.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\thread_identity.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\throw_delegate.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\base\internal\unscaledcycleclock.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

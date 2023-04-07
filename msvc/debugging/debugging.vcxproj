@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{116B9C3B-E42E-43EF-9590-A31435694576}</ProjectGuid>
     <RootNamespace>debugging</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
@@ -26,22 +29,22 @@
     <ClInclude Include="..\..\absl\debugging\internal\symbolize.h" />
     <ClInclude Include="..\..\absl\debugging\internal\vdso_support.h" />
     <ClCompile Include="..\..\absl\debugging\internal\address_is_readable.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\demangle.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\elf_mem_image.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\examine_stack.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\stack_consumption.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\debugging\internal\vdso_support.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -4,10 +4,13 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{73BF0CE2-A996-4392-8940-206AD81C3774}</ProjectGuid>
     <RootNamespace>strings</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
@@ -61,61 +64,61 @@
     <ClInclude Include="..\..\absl\strings\internal\str_split_internal.h" />
     <ClInclude Include="..\..\absl\strings\internal\utf8.h" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\arg.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\str_format\bind.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\str_format\extension.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\str_format\float_conversion.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\str_format\output.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\str_format\parser.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\charconv_bigint.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\charconv_parse.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cordz_functions.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cordz_handle.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cordz_info.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cordz_sample_token.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cord_internal.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\cord_rep_ring.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\escaping.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\memutil.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\ostringstream.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\pow10_helper.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\utf8.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
