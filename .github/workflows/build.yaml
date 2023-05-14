@@ -7,7 +7,7 @@ on:
     branches: [ '*' ]
 
 env:
-  PRINCIPIA_HEADERS_ABSEIL: absl/**/*.h absl/**/*.inc
+  PRINCIPIA_HEADERS_ABSEIL: absl
   PRINCIPIA_MSVC_ABSEIL: msvc
 
 jobs:
@@ -45,8 +45,8 @@ jobs:
         solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
 
     - name: Upload artifact
-      uses: mockingbirdnest/actions/windows/upload_artifact@main
+      uses: mockingbirdnest/actions/windows/upload_artifact@WF
       with:
         name: abseil-cpp
-        headers_glob: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
+        headers_directory: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
         solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
