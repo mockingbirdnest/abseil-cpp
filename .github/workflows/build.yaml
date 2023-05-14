@@ -1,0 +1,52 @@
+name: Build
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ '*' ]
+
+env:
+  PRINCIPIA_HEADERS_ABSEIL: absl/**/*.h absl/**/*.inc
+  PRINCIPIA_MSVC_ABSEIL: msvc
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+        matrix:
+          configuration: [Debug, Release]
+    steps:
+    - name: Checkout source files
+      uses: actions/checkout@v3
+
+    - name: Download glog artifact
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      with:
+        name: glog
+
+    - name: Download benchmark artifact
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      with:
+        name: benchmark
+
+    - name: Download googletest artifact
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      with:
+        name: googletest
+
+    - name: Find MSBuild
+      uses: mockingbirdnest/actions/windows/find_msbuild@main
+
+    - name: Rebuild ${{ matrix.configuration }}
+      uses: mockingbirdnest/actions/windows/rebuild@main
+      with:
+        configuration: ${{ matrix.configuration }}
+        solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
+
+    - name: Upload artifact
+      uses: mockingbirdnest/actions/windows/upload_artifact@main
+      with:
+        name: abseil-cpp
+        headers_glob: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
+        solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
