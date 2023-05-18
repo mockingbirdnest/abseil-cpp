@@ -20,20 +20,28 @@ jobs:
     - name: Checkout source files
       uses: actions/checkout@v3
 
+    - name: Initialize build environment
+      uses: mockingbirdnest/actions/windows/initialize_build@main
+      with:
+        configuration: ${{ matrix.configuration }}
+
     - name: Download glog artifact
       uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: glog
+        configuration: ${{ matrix.configuration }}
 
     - name: Download benchmark artifact
       uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: benchmark
+        configuration: ${{ matrix.configuration }}
 
     - name: Download googletest artifact
       uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: googletest
+        configuration: ${{ matrix.configuration }}
 
     - name: Rebuild ${{ matrix.configuration }}
       uses: mockingbirdnest/actions/windows/rebuild@main
