@@ -21,24 +21,24 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Initialize build environment
-      uses: mockingbirdnest/actions/windows/initialize_build@WF
+      uses: mockingbirdnest/actions/windows/initialize_build@main
       with:
         configuration: ${{ matrix.configuration }}
 
     - name: Download glog artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: glog
         configuration: ${{ matrix.configuration }}
 
     - name: Download benchmark artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: benchmark
         configuration: ${{ matrix.configuration }}
 
     - name: Download googletest artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@WF
+      uses: mockingbirdnest/actions/windows/download_artifact@main
       with:
         name: googletest
         configuration: ${{ matrix.configuration }}
@@ -50,7 +50,7 @@ jobs:
         solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
 
     - name: Upload artifact
-      uses: mockingbirdnest/actions/windows/upload_artifact@WF
+      uses: mockingbirdnest/actions/windows/upload_artifact@main
       with:
         name: abseil-cpp
         headers_directory: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
