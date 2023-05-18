@@ -20,20 +20,28 @@ jobs:
     - name: Checkout source files
       uses: actions/checkout@v3
 
+    - name: Initialize build environment
+      uses: mockingbirdnest/actions/windows/initialize_build@WF
+      with:
+        configuration: ${{ matrix.configuration }}
+
     - name: Download glog artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
       with:
         name: glog
+        configuration: ${{ matrix.configuration }}
 
     - name: Download benchmark artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
       with:
         name: benchmark
+        configuration: ${{ matrix.configuration }}
 
     - name: Download googletest artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
+      uses: mockingbirdnest/actions/windows/download_artifact@WF
       with:
         name: googletest
+        configuration: ${{ matrix.configuration }}
 
     - name: Rebuild ${{ matrix.configuration }}
       uses: mockingbirdnest/actions/windows/rebuild@main
@@ -42,7 +50,7 @@ jobs:
         solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
 
     - name: Upload artifact
-      uses: mockingbirdnest/actions/windows/upload_artifact@main
+      uses: mockingbirdnest/actions/windows/upload_artifact@WF
       with:
         name: abseil-cpp
         headers_directory: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
