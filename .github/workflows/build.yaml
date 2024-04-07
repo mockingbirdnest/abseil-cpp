@@ -54,5 +54,6 @@ jobs:
       uses: mockingbirdnest/actions/windows/upload_artifact@main
       with:
         name: abseil-cpp
+        configuration: ${{ matrix.configuration }}
         headers_directory: ${{ env.PRINCIPIA_HEADERS_ABSEIL }}
         solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
