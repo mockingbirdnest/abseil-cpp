@@ -1,0 +1,28 @@
+{
+  "solution": {
+    "path": "abseil-cpp.sln",
+    "projects": [
+      "algorithm\\algorithm.vcxproj",
+      "base\\base.vcxproj",
+      "cleanup\\cleanup.vcxproj",
+      "container\\container.vcxproj",
+      "crc\\crc.vcxproj",
+      "debugging\\debugging.vcxproj",
+      "flags\\flags.vcxproj",
+      "functional\\functional.vcxproj",
+      "hash\\hash.vcxproj",
+      "log\\log.vcxproj",
+      "memory\\memory.vcxproj",
+      "meta\\meta.vcxproj",
+      "numeric\\numeric.vcxproj",
+      "profiling\\profiling.vcxproj",
+      "random\\random.vcxproj",
+      "status\\status.vcxproj",
+      "strings\\strings.vcxproj",
+      "synchronization\\synchronization.vcxproj",
+      "time\\time.vcxproj",
+      "types\\types.vcxproj",
+      "utility\\utility.vcxproj"
+    ]
+  }
+}

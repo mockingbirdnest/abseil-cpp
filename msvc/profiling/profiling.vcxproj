@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6265D386-0791-4A75-BDA5-4C34EA6EB438}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\profiling\hashtable.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\profiling\internal\exponential_biased.h" />
+    <ClInclude Include="..\..\absl\profiling\internal\periodic_sampler.h" />
+    <ClInclude Include="..\..\absl\profiling\internal\profile_builder.h" />
+    <ClInclude Include="..\..\absl\profiling\internal\sample_recorder.h" />
+    <ClCompile Include="..\..\absl\profiling\internal\exponential_biased.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\profiling\internal\periodic_sampler.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\profiling\internal\profile_builder.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\profiling\hashtable.cc" />
+  </ItemGroup>
+</Project>

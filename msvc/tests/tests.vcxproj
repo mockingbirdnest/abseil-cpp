@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{322F0235-F62A-4115-A452-1059FB8AED7D}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\algorithm\algorithm_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\algorithm\container_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\base\internal\atomic_hook_test_helper.h" />
+    <ClInclude Include="..\..\absl\base\internal\exception_safety_testing.h" />
+    <ClInclude Include="..\..\absl\base\internal\exception_testing.h" />
+    <ClInclude Include="..\..\absl\base\internal\iterator_traits_test_helper.h" />
+    <ClCompile Include="..\..\absl\base\internal\atomic_hook_test_helper.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\cmake_thread_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\endian_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\errno_saver_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\exception_safety_testing.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\hardening_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\iterator_traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\low_level_alloc_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\nullability_traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\poison_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\scoped_set_env_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\strerror_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\sysinfo_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\thread_identity_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\tracing_strong_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\tracing_weak_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\internal\unique_small_name_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\attributes_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\bit_cast_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\call_once_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\casts_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\config_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\exception_safety_testing_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\fast_type_id_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\log_severity_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\no_destructor_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\nullability_default_nonnull_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\nullability_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\optimization_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\prefetch_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\raw_logging_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\spinlock_test_common.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\base\throw_delegate_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\cleanup\cleanup_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\container\btree_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\hash_generator_testing.h" />
+    <ClInclude Include="..\..\absl\container\internal\hash_policy_testing.h" />
+    <ClInclude Include="..\..\absl\container\internal\heterogeneous_lookup_testing.h" />
+    <ClInclude Include="..\..\absl\container\internal\test_allocator.h" />
+    <ClInclude Include="..\..\absl\container\internal\test_instance_tracker.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_modifiers_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h" />
+    <ClCompile Include="..\..\absl\container\internal\common_policy_traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\compressed_tuple_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\container_memory_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_function_defaults_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_generator_testing.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_policy_testing_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hash_policy_traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hashtable_control_bytes_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\layout_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\node_slot_policy_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_allocator_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_resize_impl_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\test_instance_tracker_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\test_instance_tracker.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\unordered_map_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\unordered_set_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\btree_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\chunked_queue_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\fixed_array_exception_safety_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\fixed_array_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\flat_hash_map_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\flat_hash_set_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\inlined_vector_exception_safety_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\inlined_vector_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\linked_hash_map_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\linked_hash_set_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\node_hash_map_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\node_hash_set_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\sample_element_size_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\crc\internal\crc_cord_state_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\non_temporal_memcpy_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\crc32c_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\debugging\internal\bounded_utf8_length_sequence_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\decode_rust_punycode_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\demangle_rust_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\demangle_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\stack_consumption_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\internal\utf8_for_code_point_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\failure_signal_handler_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\leak_check_fail_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\leak_check_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\stacktrace_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\debugging\symbolize_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\flags\internal\path_util_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\program_name_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\sequence_lock_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\internal\usage_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\commandlineflag_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\config_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag_test_defs.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\flag_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\marshalling_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\parse_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\reflection_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\flags\usage_config_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\functional\any_invocable_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\bind_front_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\function_ref_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\functional\overload_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\hash\internal\hash_test.h" />
+    <ClCompile Include="..\..\absl\hash\internal\city_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\internal\low_level_hash_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\hash_instantiated_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\hash\hash_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\log\internal\test_actions.h" />
+    <ClInclude Include="..\..\absl\log\internal\test_helpers.h" />
+    <ClInclude Include="..\..\absl\log\internal\test_matchers.h" />
+    <ClCompile Include="..\..\absl\log\internal\container_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\fnmatch_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\stderr_log_sink_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\structured_proto_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\test_actions.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\test_helpers.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\test_matchers.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\absl_check_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\absl_log_basic_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\check_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\die_if_null_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\flags_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\globals_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_basic_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_entry_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_format_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_macro_hygiene_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_modifier_methods_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_sink_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_streamer_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\scoped_mock_log_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\stripping_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\structured_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\vlog_is_on_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\memory\memory_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\meta\internal\constexpr_testing.h" />
+    <ClCompile Include="..\..\absl\meta\internal\constexpr_testing_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\meta\internal\requires_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\meta\type_traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\numeric\bits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\int128_stream_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\numeric\int128_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\profiling\internal\exponential_biased_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\profiling\internal\periodic_sampler_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\profiling\internal\sample_recorder_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\random\internal\distribution_test_util.h" />
+    <ClCompile Include="..\..\absl\random\internal\chi_square_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\distribution_test_util_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\distribution_test_util.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\entropy_pool_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\explicit_seed_seq_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\fast_uniform_bits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\fastmath_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\generate_real_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\iostream_state_saver_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\nanobenchmark_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\nonsecure_base_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\pcg_engine_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_engine_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_hwaes_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_slow_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\randen_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\salted_seed_seq_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\seed_material_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\traits_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\uniform_helper_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\internal\wide_multiply_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\bernoulli_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\beta_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\bit_gen_ref_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\discrete_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\distributions_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\examples_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\exponential_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\gaussian_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\generators_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\log_uniform_int_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\mock_distributions_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\mocking_bit_gen_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\poisson_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\seed_sequences_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\uniform_int_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\uniform_real_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\zipf_distribution_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\status\status_matchers_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\status_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\statusor_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
+    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
+    <ClInclude Include="..\..\absl\strings\internal\cord_rep_test_util.h" />
+    <ClInclude Include="..\..\absl\strings\internal\escaping_test_common.h" />
+    <ClInclude Include="..\..\absl\strings\internal\numbers_test_common.h" />
+    <ClCompile Include="..\..\absl\strings\internal\str_format\arg_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\bind_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\checker_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\convert_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\extension_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\output_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\str_format\parser_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\append_and_overwrite_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_bigint_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\charconv_parse_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_data_edge_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_rep_btree_navigator_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_rep_btree_reader_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_rep_btree_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cord_rep_crc_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_functions_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_handle_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_info_statistics_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_info_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_sample_token_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_update_scope_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\cordz_update_tracker_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\damerau_levenshtein_distance_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\generic_printer_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\memutil_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\ostringstream_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\pow10_helper_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\resize_uninitialized_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\string_constant_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\stringify_stream_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\internal\utf8_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\ascii_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\atod_manual_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\char_formatting_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\charconv_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\charset_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cord_buffer_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cord_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\cordz_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\escaping_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\has_absl_stringify_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\has_ostream_operator_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\match_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\numbers_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\resize_and_overwrite_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_cat_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_format_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_join_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_replace_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\str_split_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\string_view_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\strip_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\strings\substitute_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\kernel_timeout_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\waiter_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\barrier_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\blocking_counter_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\lifetime_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\mutex_method_pointer_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\mutex_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\notification_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.h" />
+    <ClInclude Include="..\..\absl\time\internal\test_util.h" />
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_lookup_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\test_util.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\civil_time_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\clock_interface_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\clock_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\duration_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\flag_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\format_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\simulated_clock_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\time_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\time_zone_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\types\any_span_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\compare_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\optional_ref_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\source_location_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\span_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\types\variant_test.cc">
+      <ObjectFileName>$(IntDir)$([System.IO.Path]::GetFilename($([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\base\base.vcxproj">
+      <Project>{61ceed69-e6fb-4f61-aa59-25640adab4e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\container\container.vcxproj">
+      <Project>{4f7e6a40-25ea-4e7f-9849-9c8d4463268d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\crc\crc.vcxproj">
+      <Project>{31d9f15a-f816-402c-9ad8-d446473ecda2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\debugging\debugging.vcxproj">
+      <Project>{116b9c3b-e42e-43ef-9590-a31435694576}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\flags\flags.vcxproj">
+      <Project>{531d3279-eb26-4d98-9206-7f548c171e4a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\hash\hash.vcxproj">
+      <Project>{4a99cb40-9e88-4374-a67f-3c15d6b61e6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\log\log.vcxproj">
+      <Project>{0d4c0f77-c0e8-43d0-8106-a966056b5edd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\numeric\numeric.vcxproj">
+      <Project>{36fcb0f6-a293-497f-8478-e955d175f2d0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\profiling\profiling.vcxproj">
+      <Project>{6265d386-0791-4a75-bda5-4c34ea6eb438}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\random\random.vcxproj">
+      <Project>{a83f94f5-7ce8-4759-b4ce-0b133e102ffe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\status\status.vcxproj">
+      <Project>{134d7e5a-73ff-4cc4-af16-6cc56b3b7947}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\strings\strings.vcxproj">
+      <Project>{73bf0ce2-a996-4392-8940-206ad81c3774}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\synchronization\synchronization.vcxproj">
+      <Project>{67c97d22-ed98-47bd-a840-46044fdeb59f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\time\time.vcxproj">
+      <Project>{bc3a5306-ca46-41e6-83c5-19d828ba7778}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\types\types.vcxproj">
+      <Project>{e1c9d158-f541-4a35-8cd5-33545d45fb89}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

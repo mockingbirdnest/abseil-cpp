@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{E1C9D158-F541-4A35-8CD5-33545D45FB89}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\types\any_span.h" />
+    <ClInclude Include="..\..\absl\types\any.h" />
+    <ClInclude Include="..\..\absl\types\compare.h" />
+    <ClInclude Include="..\..\absl\types\optional_ref.h" />
+    <ClInclude Include="..\..\absl\types\optional.h" />
+    <ClInclude Include="..\..\absl\types\source_location.h" />
+    <ClInclude Include="..\..\absl\types\span.h" />
+    <ClInclude Include="..\..\absl\types\variant.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\types\internal\any_span.h" />
+    <ClInclude Include="..\..\absl\types\internal\span.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\types\source_location.cc" />
+  </ItemGroup>
+</Project>

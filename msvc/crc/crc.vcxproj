@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{31D9F15A-F816-402C-9AD8-D446473ECDA2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(SolutionDir)abseil-cpp.props" />
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\crc\crc32c.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\crc\internal\cpu_detect.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc_cord_state.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc_internal.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc_memcpy.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc32_x86_arm_combined_simd.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc32c_inline.h" />
+    <ClInclude Include="..\..\absl\crc\internal\crc32c.h" />
+    <ClInclude Include="..\..\absl\crc\internal\non_temporal_arm_intrinsics.h" />
+    <ClInclude Include="..\..\absl\crc\internal\non_temporal_memcpy.h" />
+    <ClCompile Include="..\..\absl\crc\internal\cpu_detect.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_cord_state.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_fallback.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_x86_arm_combined.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_non_temporal_memcpy.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_x86_arm_combined.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\crc\crc32c.cc" />
+  </ItemGroup>
+</Project>
