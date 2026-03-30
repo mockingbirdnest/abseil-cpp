@@ -11,29 +11,20 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
+    <ClInclude Include="..\..\absl\types\any_span.h" />
     <ClInclude Include="..\..\absl\types\any.h" />
-    <ClInclude Include="..\..\absl\types\bad_any_cast.h" />
-    <ClInclude Include="..\..\absl\types\bad_optional_access.h" />
-    <ClInclude Include="..\..\absl\types\bad_variant_access.h" />
     <ClInclude Include="..\..\absl\types\compare.h" />
+    <ClInclude Include="..\..\absl\types\optional_ref.h" />
     <ClInclude Include="..\..\absl\types\optional.h" />
+    <ClInclude Include="..\..\absl\types\source_location.h" />
     <ClInclude Include="..\..\absl\types\span.h" />
     <ClInclude Include="..\..\absl\types\variant.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\types\internal\conformance_aliases.h" />
-    <ClInclude Include="..\..\absl\types\internal\conformance_archetype.h" />
-    <ClInclude Include="..\..\absl\types\internal\conformance_profile.h" />
-    <ClInclude Include="..\..\absl\types\internal\conformance_testing_helpers.h" />
-    <ClInclude Include="..\..\absl\types\internal\optional.h" />
-    <ClInclude Include="..\..\absl\types\internal\parentheses.h" />
+    <ClInclude Include="..\..\absl\types\internal\any_span.h" />
     <ClInclude Include="..\..\absl\types\internal\span.h" />
-    <ClInclude Include="..\..\absl\types\internal\transform_args.h" />
-    <ClInclude Include="..\..\absl\types\internal\variant.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\types\bad_any_cast.cc" />
-    <ClCompile Include="..\..\absl\types\bad_optional_access.cc" />
-    <ClCompile Include="..\..\absl\types\bad_variant_access.cc" />
+    <ClCompile Include="..\..\absl\types\source_location.cc" />
   </ItemGroup>
 </Project>

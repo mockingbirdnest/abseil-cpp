@@ -15,12 +15,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\cleanup\cleanup.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\cleanup\internal\cleanup.h">
-       <Filter>Internal Files</Filter>
+      <Filter>Internal Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

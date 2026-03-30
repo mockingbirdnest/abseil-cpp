@@ -16,4 +16,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\cleanup\internal\cleanup.h" />
   </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

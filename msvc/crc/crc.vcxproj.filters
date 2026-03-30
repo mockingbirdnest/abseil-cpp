@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{391ED7D3-87EC-4E41-9DF9-192357CDA7D0}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7B82EF40-2350-47E7-888E-8015A1876E34}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{0D764CB0-FA8D-4DAF-BE9C-644A6EFD1512}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\crc\crc32c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\crc\internal\cpu_detect.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc_cord_state.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc_internal.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc_memcpy.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc32_x86_arm_combined_simd.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc32c_inline.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\crc32c.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\non_temporal_arm_intrinsics.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\crc\internal\non_temporal_memcpy.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\crc\internal\cpu_detect.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_cord_state.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_fallback.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_x86_arm_combined.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_non_temporal_memcpy.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc_x86_arm_combined.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\crc\internal\crc.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\crc\crc32c.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -14,19 +14,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\any_invocable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\absl\functional\bind_front.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\functional\function_ref.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\functional\overload.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\internal\any_invocable.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\absl\functional\internal\front_binder.h">
-       <Filter>Internal Files</Filter>
+      <Filter>Internal Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\functional\internal\function_ref.h">
-       <Filter>Internal Files</Filter>
+      <Filter>Internal Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

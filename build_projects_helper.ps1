@@ -1,10 +1,7 @@
 # This script helps creating project files for abseil-cpp.  The argument is the path of a subdirectory of absl/.
-# It produces three pairs of *.vcxproj, *.vcxproj.filters files: one for the subdirectory being operated upon,
-# one for the benchmarks project and one for the tests project.  For the first pair, the generated XML may just
-# be inserted at the right place in the project files, replacing whatever was there.  For the benchmarks and tests
-# things are more complicate as the generated XML must be inserted at the right place.
-# TODO(phl): The next time we do this dance, start by beefing up the script to generate the complete files for
-# benchmarks and tests in one fell swoop.  That will save a lot of time and errors.
+# It produces a pair of *.vcxproj, *.vcxproj.filters files for the subdirectory being operated upon.  It also
+# appends to *.vcxproj and *.vcxproj.filters files for the tests and benchmarks.  The generated XML may just
+# be inserted at the right place in the project files, replacing whatever was there.
 
 $dir = resolve-path $args[0]
 $vcxprojname = [string]::format("{0}_vcxproj.txt", $dir)
@@ -114,17 +111,11 @@ $dirfilterspath = [string]::format("{0}_vcxproj_filters.txt", $dir)
     $filtersheaders + $filtersinternals + $filterssources,
     [system.text.encoding]::utf8)
 
-$benchmarksfilterspath = [string]::format("{0}_benchmarks_vcxproj_filters.txt", $dir)
-[system.io.file]::writealltext(
-    $benchmarksfilterspath,
-    $filtersbenchmarks,
-    [system.text.encoding]::utf8)
+$benchmarksfilterspath = [string]::format("benchmarks_vcxproj_filters.txt", $dir)
+Add-Content -Path $benchmarksfilterspath -Value $filtersbenchmarks -Encoding UTF8
 
-$testsfilterspath = [string]::format("{0}_tests_vcxproj_filters.txt", $dir)
-[system.io.file]::writealltext(
-    $testsfilterspath,
-    $filterstests,
-    [system.text.encoding]::utf8)
+$testsfilterspath = [string]::format("tests_vcxproj_filters.txt", $dir)
+Add-Content -Path $testsfilterspath -Value $filterstests -Encoding UTF8
 
 $dirvcxprojpath = [string]::format("{0}_vcxproj.txt", $dir)
 [system.io.file]::writealltext(
@@ -132,14 +123,8 @@ $dirvcxprojpath = [string]::format("{0}_vcxproj.txt", $dir)
     $vcxprojheaders + $vcxprojinternals + $vcxprojsources,
     [system.text.encoding]::utf8)
 
-$benchmarksvcxprojpath = [string]::format("{0}_benchmarks_vcxproj.txt", $dir)
-[system.io.file]::writealltext(
-    $benchmarksvcxprojpath,
-    $vcxprojbenchmarks,
-    [system.text.encoding]::utf8)
+$benchmarksvcxprojpath = [string]::format("benchmarks_vcxproj.txt", $dir)
+Add-Content -Path $benchmarksvcxprojpath -Value $vcxprojbenchmarks -Encoding UTF8
 
-$testsvcxprojpath = [string]::format("{0}_tests_vcxproj.txt", $dir)
-[system.io.file]::writealltext(
-    $testsvcxprojpath,
-    $vcxprojtests,
-    [system.text.encoding]::utf8)
+$testsvcxprojpath = [string]::format("tests_vcxproj.txt", $dir)
+Add-Content -Path $testsvcxprojpath -Value $vcxprojtests -Encoding UTF8

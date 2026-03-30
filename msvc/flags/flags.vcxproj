@@ -18,8 +18,8 @@
     <ClInclude Include="..\..\absl\flags\marshalling.h" />
     <ClInclude Include="..\..\absl\flags\parse.h" />
     <ClInclude Include="..\..\absl\flags\reflection.h" />
-    <ClInclude Include="..\..\absl\flags\usage.h" />
     <ClInclude Include="..\..\absl\flags\usage_config.h" />
+    <ClInclude Include="..\..\absl\flags\usage.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\flags\internal\commandlineflag.h" />
@@ -32,28 +32,27 @@
     <ClInclude Include="..\..\absl\flags\internal\sequence_lock.h" />
     <ClInclude Include="..\..\absl\flags\internal\usage.h" />
     <ClCompile Include="..\..\absl\flags\internal\commandlineflag.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\flags\internal\flag.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\flags\internal\private_handle_accessor.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\flags\internal\program_name.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\flags\internal\usage.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\flags\commandlineflag.cc" />
-    <ClCompile Include="..\..\absl\flags\flag.cc" />
     <ClCompile Include="..\..\absl\flags\marshalling.cc" />
     <ClCompile Include="..\..\absl\flags\parse.cc" />
     <ClCompile Include="..\..\absl\flags\reflection.cc" />
-    <ClCompile Include="..\..\absl\flags\usage.cc" />
     <ClCompile Include="..\..\absl\flags\usage_config.cc" />
+    <ClCompile Include="..\..\absl\flags\usage.cc" />
   </ItemGroup>
 </Project>

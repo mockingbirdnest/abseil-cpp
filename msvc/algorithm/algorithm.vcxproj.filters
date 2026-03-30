@@ -15,10 +15,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\algorithm\algorithm.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\algorithm\container.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

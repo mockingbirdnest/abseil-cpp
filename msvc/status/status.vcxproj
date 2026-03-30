@@ -11,17 +11,25 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
+    <ClInclude Include="..\..\absl\status\status_matchers.h" />
+    <ClInclude Include="..\..\absl\status\status_payload_printer.h" />
     <ClInclude Include="..\..\absl\status\status.h" />
     <ClInclude Include="..\..\absl\status\statusor.h" />
-    <ClInclude Include="..\..\absl\status\status_payload_printer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h" />
     <ClInclude Include="..\..\absl\status\internal\status_internal.h" />
+    <ClInclude Include="..\..\absl\status\internal\status_matchers.h" />
+    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h" />
+    <ClCompile Include="..\..\absl\status\internal\status_internal.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\internal\status_matchers.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\absl\status\status_payload_printer.cc" />
     <ClCompile Include="..\..\absl\status\status.cc" />
     <ClCompile Include="..\..\absl\status\statusor.cc" />
-    <ClCompile Include="..\..\absl\status\status_payload_printer.cc" />
   </ItemGroup>
 </Project>

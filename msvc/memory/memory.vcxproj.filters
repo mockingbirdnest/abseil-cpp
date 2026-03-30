@@ -14,8 +14,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\memory\memory.h">
-       <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="..\..\absl\memory\memory.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

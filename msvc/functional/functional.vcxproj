@@ -11,11 +11,16 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\any_invocable.h" />
     <ClInclude Include="..\..\absl\functional\bind_front.h" />
     <ClInclude Include="..\..\absl\functional\function_ref.h" />
+    <ClInclude Include="..\..\absl\functional\overload.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\absl\functional\internal\any_invocable.h" />
     <ClInclude Include="..\..\absl\functional\internal\front_binder.h" />
     <ClInclude Include="..\..\absl\functional\internal\function_ref.h" />
+  </ItemGroup>
+  <ItemGroup>
   </ItemGroup>
 </Project>

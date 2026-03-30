@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F6ADE08A-9661-4F7B-BF0E-17C6FA41D35C}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{42BDCB9E-1C01-41A1-BD0A-4C36D05F52C2}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Internal Files">
+      <UniqueIdentifier>{D49F8727-BC15-4327-9986-81AE192C06C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\log\absl_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\absl_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\absl_vlog_is_on.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\die_if_null.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\log_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\log_sink_registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\log_sink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\log_streamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\scoped_mock_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\structured.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\vlog_is_on.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\log\internal\append_truncated.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\check_impl.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\check_op.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\conditions.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\config.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\container.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\flags.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\fnmatch.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\globals.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\log_format.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\log_impl.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\log_message.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\log_sink_set.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\nullguard.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\nullstream.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\proto.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\strip.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\structured_proto.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\structured.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\vlog_config.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\log\internal\voidify.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\log\internal\check_op.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\conditions.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\fnmatch.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\globals.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\log_format.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\log_message.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\log_sink_set.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\nullguard.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\proto.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\structured_proto.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\vlog_config.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\log\die_if_null.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\flags.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\globals.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\initialize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_entry.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_sink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\scoped_mock_log.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

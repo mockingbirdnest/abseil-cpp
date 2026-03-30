@@ -14,33 +14,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\status\status.h">
-       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\status\statusor.h">
-       <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\absl\status\status_matchers.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\status\status_payload_printer.h">
-       <Filter>Header Files</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\statusor.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h">
-       <Filter>Internal Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\absl\status\internal\status_internal.h">
-       <Filter>Internal Files</Filter>
+      <Filter>Internal Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\absl\status\internal\status_matchers.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\absl\status\internal\statusor_internal.h">
+      <Filter>Internal Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\absl\status\internal\status_internal.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\internal\status_matchers.cc">
+      <Filter>Internal Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\absl\status\status_payload_printer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\absl\status\status.cc">
-       <Filter>Source Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\status\statusor.cc">
-       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\status\status_payload_printer.cc">
-       <Filter>Source Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

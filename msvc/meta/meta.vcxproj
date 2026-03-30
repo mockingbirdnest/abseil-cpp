@@ -13,4 +13,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\meta\type_traits.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\absl\meta\internal\requires.h" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

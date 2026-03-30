@@ -18,23 +18,47 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\synchronization\internal\create_thread_identity.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\futex_waiter.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\futex.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\graphcycles.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\kernel_timeout.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\per_thread_sem.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\pthread_waiter.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\sem_waiter.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\stdcpp_waiter.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\thread_pool.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\waiter_base.h" />
     <ClInclude Include="..\..\absl\synchronization\internal\waiter.h" />
+    <ClInclude Include="..\..\absl\synchronization\internal\win32_waiter.h" />
     <ClCompile Include="..\..\absl\synchronization\internal\create_thread_identity.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\futex_waiter.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\kernel_timeout.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
     <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="..\..\absl\synchronization\internal\waiter.cc">
-       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    <ClCompile Include="..\..\absl\synchronization\internal\pthread_waiter.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\sem_waiter.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\stdcpp_waiter.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\waiter_base.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\synchronization\internal\win32_waiter.cc">
+      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

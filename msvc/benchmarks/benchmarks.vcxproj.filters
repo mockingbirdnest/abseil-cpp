@@ -11,12 +11,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\algorithm\equal_benchmark.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\base\internal\periodic_sampler_benchmark.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -26,13 +23,28 @@
     <ClCompile Include="..\..\absl\base\internal\thread_identity_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\base\no_destructor_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\container\internal\layout_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\container\internal\raw_hash_set_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\container\internal\raw_hash_set_probe_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\absl\container\btree_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\chunked_queue_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\container\fixed_array_benchmark.cc">
@@ -41,19 +53,94 @@
     <ClCompile Include="..\..\absl\container\inlined_vector_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\container\linked_hash_map_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\container\linked_hash_set_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\crc\crc32c_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\debugging\stacktrace_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\flags\flag_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\functional\function_ref_benchmark.cc">
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\functional\function_type_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\hash\hash_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\log\internal\fnmatch_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\internal\vlog_config_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\log\log_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\numeric\bits_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\numeric\int128_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\strings\internal\char_map_benchmark.cc">
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\profiling\internal\periodic_sampler_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\status\status_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\status\statusor_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClCompile Include="..\..\absl\strings\internal\damerau_levenshtein_distance_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\internal\memutil_benchmark.cc">
@@ -68,13 +155,13 @@
     <ClCompile Include="..\..\absl\strings\charconv_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\strings\charset_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\absl\strings\escaping_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\numbers_benchmark.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\strings\string_view_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\absl\strings\str_cat_benchmark.cc">
@@ -89,6 +176,12 @@
     <ClCompile Include="..\..\absl\strings\str_split_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\strings\substitute_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -98,6 +191,9 @@
     <ClCompile Include="..\..\absl\synchronization\mutex_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -116,16 +212,15 @@
     <ClCompile Include="..\..\absl\time\time_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\absl\types\variant_benchmark.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\absl\time\internal\test_util.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
+
   <ItemGroup>
-    <ClInclude Include="..\..\absl\time\internal\test_util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClCompile Include="..\..\absl\types\any_span_benchmark.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
+
+  <ItemGroup>
+  </ItemGroup>
+
 </Project>

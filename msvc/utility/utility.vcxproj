@@ -13,4 +13,8 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\utility\utility.h" />
   </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>

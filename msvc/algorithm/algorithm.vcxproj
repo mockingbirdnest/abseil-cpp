@@ -14,4 +14,8 @@
     <ClInclude Include="..\..\absl\algorithm\algorithm.h" />
     <ClInclude Include="..\..\absl\algorithm\container.h" />
   </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
 </Project>
