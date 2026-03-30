@@ -172,6 +172,7 @@ static bool ProcessOneTestFile(const char* filename) {
   return true;
 }
 
+#ifndef _MSC_VER
 int main(int argc, char** argv) {
   if (argc < 2) {
     absl::FPrintF(
@@ -191,3 +192,4 @@ int main(int argc, char** argv) {
   }
   return 0;
 }
+#endif

@@ -171,7 +171,9 @@ void RunAll(const int argc, char* argv[]) {
 
 }  // namespace
 
+#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   RunAll(argc, argv);
   return 0;
 }
+#endif

@@ -580,6 +580,7 @@ TEST(Symbolize, Unimplemented) {
 
 #endif
 
+#ifndef _MSC_VER
 int main(int argc, char **argv) {
 #if !defined(__EMSCRIPTEN__)
   // Make sure kHpageTextPadding is linked into the binary.
@@ -618,3 +619,4 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 #endif  // !defined(__EMSCRIPTEN__)
 }
+#endif

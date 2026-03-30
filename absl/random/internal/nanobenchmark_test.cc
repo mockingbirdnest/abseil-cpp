@@ -73,7 +73,9 @@ void RunAll(const int argc, char* argv[]) {
 ABSL_NAMESPACE_END
 }  // namespace absl
 
+#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   absl::random_internal_nanobenchmark::RunAll(argc, argv);
   return 0;
 }
+#endif

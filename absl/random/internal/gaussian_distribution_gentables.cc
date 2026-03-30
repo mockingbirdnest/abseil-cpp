@@ -134,9 +134,11 @@ void TableGenerator::Print(std::ostream* os) {
 ABSL_NAMESPACE_END
 }  // namespace absl
 
+#ifndef _MSC_VER
 int main(int, char**) {
   std::cerr << "\nCopy the output to gaussian_distribution.cc" << std::endl;
   absl::random_internal::TableGenerator generator;
   generator.Print(&std::cout);
   return 0;
 }
+#endif

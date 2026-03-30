@@ -538,6 +538,7 @@ path.
 
 }  // namespace
 
+#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   (void)absl::GetFlag(FLAGS_undefok);  // Force linking of parse.cc
   flags::SetProgramInvocationName("usage_test");
@@ -548,3 +549,4 @@ int main(int argc, char* argv[]) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+#endif

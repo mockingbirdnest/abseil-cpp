@@ -158,6 +158,7 @@ static struct BeforeMain {
 ABSL_NAMESPACE_END
 }  // namespace absl
 
+#ifndef _MSC_VER
 int main(int argc, char *argv[]) {
   // The actual test runs in the global constructor of `before_main`.
   printf("PASS\n");
@@ -178,3 +179,4 @@ int main(int argc, char *argv[]) {
 #endif
   return 0;
 }
+#endif

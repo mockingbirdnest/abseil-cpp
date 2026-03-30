@@ -171,6 +171,7 @@ ABSL_CONST_INIT absl::Mutex late_const_init_mutex(absl::kConstInit);
 
 }  // namespace
 
+#ifndef _MSC_VER
 int main() {
   TestLocals();
   TestConstInitGlobal();
@@ -178,3 +179,4 @@ int main() {
   // above global object destructors to run.
   std::exit(0);
 }
+#endif

@@ -159,8 +159,10 @@ INSTANTIATE_TEST_SUITE_P(AbslDeathTest, FailureSignalHandlerDeathTest,
 
 }  // namespace
 
+#ifndef _MSC_VER
 int main(int argc, char** argv) {
   absl::InitializeSymbolizer(argv[0]);
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+#endif

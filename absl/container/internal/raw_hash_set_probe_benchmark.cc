@@ -492,6 +492,7 @@ void RunForType(std::vector<Result>& results) {
 
 }  // namespace
 
+#ifndef _MSC_VER
 int main(int argc, char** argv) {
   // Parse the benchmark flags. Ignore all of them except the regex pattern.
   for (int i = 1; i < argc; ++i) {
@@ -581,3 +582,4 @@ int main(int argc, char** argv) {
 
   return 0;
 }
+#endif
