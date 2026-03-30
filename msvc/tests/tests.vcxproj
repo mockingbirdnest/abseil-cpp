@@ -24,7 +24,6 @@
     <ClCompile Include="..\..\absl\algorithm\algorithm_test.cc" />
     <ClCompile Include="..\..\absl\algorithm\container_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\base\internal\atomic_hook_test_helper.h" />
     <ClInclude Include="..\..\absl\base\internal\exception_safety_testing.h" />
@@ -65,11 +64,9 @@
     <ClCompile Include="..\..\absl\base\spinlock_test_common.cc" />
     <ClCompile Include="..\..\absl\base\throw_delegate_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\cleanup\cleanup_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\container\btree_test.h" />
     <ClInclude Include="..\..\absl\container\internal\hash_generator_testing.h" />
@@ -117,17 +114,14 @@
     <ClCompile Include="..\..\absl\container\node_hash_set_test.cc" />
     <ClCompile Include="..\..\absl\container\sample_element_size_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\crc\internal\crc_cord_state_test.cc" />
     <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_test.cc" />
     <ClCompile Include="..\..\absl\crc\internal\non_temporal_memcpy_test.cc" />
     <ClCompile Include="..\..\absl\crc\crc32c_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\debugging\internal\bounded_utf8_length_sequence_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\decode_rust_punycode_test.cc" />
@@ -141,7 +135,6 @@
     <ClCompile Include="..\..\absl\debugging\stacktrace_test.cc" />
     <ClCompile Include="..\..\absl\debugging\symbolize_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\flags\internal\path_util_test.cc" />
     <ClCompile Include="..\..\absl\flags\internal\program_name_test.cc" />
@@ -156,14 +149,12 @@
     <ClCompile Include="..\..\absl\flags\reflection_test.cc" />
     <ClCompile Include="..\..\absl\flags\usage_config_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\functional\any_invocable_test.cc" />
     <ClCompile Include="..\..\absl\functional\bind_front_test.cc" />
     <ClCompile Include="..\..\absl\functional\function_ref_test.cc" />
     <ClCompile Include="..\..\absl\functional\overload_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\hash\internal\hash_test.h" />
     <ClCompile Include="..\..\absl\hash\internal\city_test.cc" />
@@ -171,7 +162,6 @@
     <ClCompile Include="..\..\absl\hash\hash_instantiated_test.cc" />
     <ClCompile Include="..\..\absl\hash\hash_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\log\internal\test_actions.h" />
     <ClInclude Include="..\..\absl\log\internal\test_helpers.h" />
@@ -201,30 +191,25 @@
     <ClCompile Include="..\..\absl\log\structured_test.cc" />
     <ClCompile Include="..\..\absl\log\vlog_is_on_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\memory\memory_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\meta\internal\constexpr_testing.h" />
     <ClCompile Include="..\..\absl\meta\internal\constexpr_testing_test.cc" />
     <ClCompile Include="..\..\absl\meta\internal\requires_test.cc" />
     <ClCompile Include="..\..\absl\meta\type_traits_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\numeric\bits_test.cc" />
     <ClCompile Include="..\..\absl\numeric\int128_stream_test.cc" />
     <ClCompile Include="..\..\absl\numeric\int128_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\profiling\internal\exponential_biased_test.cc" />
     <ClCompile Include="..\..\absl\profiling\internal\periodic_sampler_test.cc" />
     <ClCompile Include="..\..\absl\profiling\internal\sample_recorder_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\random\internal\distribution_test_util.h" />
     <ClCompile Include="..\..\absl\random\internal\chi_square_test.cc" />
@@ -266,13 +251,11 @@
     <ClCompile Include="..\..\absl\random\uniform_real_distribution_test.cc" />
     <ClCompile Include="..\..\absl\random\zipf_distribution_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\status\status_matchers_test.cc" />
     <ClCompile Include="..\..\absl\status\status_test.cc" />
     <ClCompile Include="..\..\absl\status\statusor_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
     <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
@@ -333,7 +316,6 @@
     <ClCompile Include="..\..\absl\strings\strip_test.cc" />
     <ClCompile Include="..\..\absl\strings\substitute_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\kernel_timeout_test.cc" />
@@ -346,7 +328,6 @@
     <ClCompile Include="..\..\absl\synchronization\mutex_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\notification_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.h" />
     <ClInclude Include="..\..\absl\time\internal\test_util.h" />
@@ -365,7 +346,6 @@
     <ClCompile Include="..\..\absl\time\time_test.cc" />
     <ClCompile Include="..\..\absl\time\time_zone_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
     <ClCompile Include="..\..\absl\types\any_span_test.cc" />
     <ClCompile Include="..\..\absl\types\compare_test.cc" />
@@ -374,13 +354,14 @@
     <ClCompile Include="..\..\absl\types\span_test.cc" />
     <ClCompile Include="..\..\absl\types\variant_test.cc" />
   </ItemGroup>
-
   <ItemGroup>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\base\base.vcxproj">
       <Project>{61ceed69-e6fb-4f61-aa59-25640adab4e0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cleanup\cleanup.vcxproj">
+      <Project>{d258ad73-ca6f-48ed-92be-90e9b21cf1bf}</Project>
     </ProjectReference>
     <ProjectReference Include="..\container\container.vcxproj">
       <Project>{4f7e6a40-25ea-4e7f-9849-9c8d4463268d}</Project>
@@ -390,6 +371,9 @@
     </ProjectReference>
     <ProjectReference Include="..\flags\flags.vcxproj">
       <Project>{531d3279-eb26-4d98-9206-7f548c171e4a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\functional\functional.vcxproj">
+      <Project>{c8d023eb-7c85-477d-9f07-4eb1dcd72ac4}</Project>
     </ProjectReference>
     <ProjectReference Include="..\hash\hash.vcxproj">
       <Project>{4a99cb40-9e88-4374-a67f-3c15d6b61e6b}</Project>
