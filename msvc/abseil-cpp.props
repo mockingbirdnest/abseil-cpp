@@ -113,7 +113,9 @@
     <Import Project="$(SolutionDir)google_benchmark.props" />
   </ImportGroup>
 
-  <ImportGroup Condition="$(ProjectName) == tests">
+  <ImportGroup Condition="$(ProjectName) == log or
+                          $(ProjectName) == status or
+                          $(ProjectName) == tests">
     <Import Project="$(SolutionDir)..\..\googletest\googletest\msvc\portability_macros.props" />
     <Import Project="$(SolutionDir)google_googletest.props" />
     <Import Project="$(SolutionDir)google_googlemock_main.props" />
