@@ -14,6 +14,9 @@
   </ItemGroup>
 
   <ItemGroup>
+  </ItemGroup>
+
+  <ItemGroup>
     <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -128,6 +131,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ClCompile Include="..\..\absl\random\internal\randen_benchmarks.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\random\benchmarks.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 
   <ItemGroup>

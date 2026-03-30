@@ -24,9 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
     <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc" />
     <ClCompile Include="..\..\absl\base\internal\strerror_benchmark.cc" />
     <ClCompile Include="..\..\absl\base\internal\thread_identity_benchmark.cc" />
@@ -93,6 +90,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ClCompile Include="..\..\absl\random\internal\randen_benchmarks.cc" />
+    <ClCompile Include="..\..\absl\random\benchmarks.cc" />
   </ItemGroup>
 
   <ItemGroup>

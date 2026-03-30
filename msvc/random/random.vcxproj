@@ -11,11 +11,6 @@
   </PropertyGroup>
   <Import Project="$(SolutionDir)abseil-cpp.props" />
   <ItemGroup>
-    <ClInclude Include="..\..\absl\profiling\hashtable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\..\absl\random\bernoulli_distribution.h" />
     <ClInclude Include="..\..\absl\random\beta_distribution.h" />
     <ClInclude Include="..\..\absl\random\bit_gen_ref.h" />
@@ -75,9 +70,6 @@
     <ClCompile Include="..\..\absl\random\internal\nanobenchmark.cc">
       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="..\..\absl\random\internal\randen_benchmarks.cc">
-      <ObjectFileName>$(IntDir)internal/</ObjectFileName>
-    </ClCompile>
     <ClCompile Include="..\..\absl\random\internal\randen_detect.cc">
       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
@@ -98,7 +90,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\absl\random\benchmarks.cc" />
     <ClCompile Include="..\..\absl\random\discrete_distribution.cc" />
     <ClCompile Include="..\..\absl\random\gaussian_distribution.cc" />
     <ClCompile Include="..\..\absl\random\seed_gen_exception.cc" />

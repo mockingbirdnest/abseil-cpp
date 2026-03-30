@@ -2,6 +2,9 @@
 # It produces a pair of *.vcxproj, *.vcxproj.filters files for the subdirectory being operated upon.  It also
 # appends to *.vcxproj and *.vcxproj.filters files for the tests and benchmarks.  The generated XML may just
 # be inserted at the right place in the project files, replacing whatever was there.
+#
+# Command to run:
+#   foreach ($p in 'algorithm','base','cleanup','container','copts','crc','debugging','flags','functional','hash','log','memory','meta','numeric','profiling','random','status','strings','synchronization','time','types','utility') { ..\build_projects_helper.ps1 $p }
 
 $dir = resolve-path $args[0]
 $vcxprojname = [string]::format("{0}_vcxproj.txt", $dir)
@@ -23,7 +26,7 @@ $vcxprojheaders += "  </ItemGroup>`r`n"
 
 $filterssources = "  <ItemGroup>`r`n"
 $vcxprojsources = "  <ItemGroup>`r`n"
-Get-ChildItem "$dir\*" -Include *.cc -Exclude *_benchmark.cc,*_test.cc,*_testing.cc,*_test_*.cc,test_*.cc | `
+Get-ChildItem "$dir\*" -Include *.cc -Exclude *_benchmark.cc,*benchmarks.cc,*_test.cc,*_testing.cc,*_test_*.cc,test_*.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filterssources +=
@@ -38,7 +41,7 @@ $vcxprojsources += "  </ItemGroup>`r`n"
 
 $filtersbenchmarks = "  <ItemGroup>`r`n"
 $vcxprojbenchmarks = "  <ItemGroup>`r`n"
-Get-ChildItem "$dir\*" -Recurse -Include *_benchmark.cc | `
+Get-ChildItem "$dir\*" -Recurse -Include *_benchmark.cc,*benchmarks.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersbenchmarks +=
@@ -80,6 +83,7 @@ $vcxprojtests += "  </ItemGroup>`r`n"
 
 $filtersinternals = "  <ItemGroup>`r`n"
 $vcxprojinternals = "  <ItemGroup>`r`n"
+
 Get-ChildItem "$dir\*\*" -Recurse -Include *.h -Exclude *_testing.h,*_test_*.h,test_*.h | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
@@ -90,7 +94,7 @@ Foreach-Object {
   $vcxprojinternals +=
       "    <ClInclude Include=`"$msvcrelativepath`" />`r`n"
 }
-Get-ChildItem "$dir\*\*" -Recurse -Include *.cc -Exclude *_benchmark.cc,*_test.cc,*_testing.cc,*_test_*.cc,test_*.cc | `
+Get-ChildItem "$dir\*\*" -Recurse -Include *.cc -Exclude *_benchmark.cc,*benchmarks.cc,*_test.cc,*_testing.cc,*_test_*.cc,test_*.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersinternals +=
