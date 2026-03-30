@@ -16,7 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\absl\hash\internal\city.h" />
-    <ClInclude Include="..\..\absl\hash\internal\hash_test.h" />
     <ClInclude Include="..\..\absl\hash\internal\hash.h" />
     <ClInclude Include="..\..\absl\hash\internal\spy_hash_state.h" />
     <ClInclude Include="..\..\absl\hash\internal\weakly_mixed_integer.h" />

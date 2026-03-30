@@ -16,9 +16,7 @@
     <ClInclude Include="..\..\absl\strings\charset.h" />
     <ClInclude Include="..\..\absl\strings\cord_analysis.h" />
     <ClInclude Include="..\..\absl\strings\cord_buffer.h" />
-    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
     <ClInclude Include="..\..\absl\strings\cord.h" />
-    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
     <ClInclude Include="..\..\absl\strings\escaping.h" />
     <ClInclude Include="..\..\absl\strings\has_absl_stringify.h" />
     <ClInclude Include="..\..\absl\strings\has_ostream_operator.h" />

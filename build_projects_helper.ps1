@@ -11,7 +11,7 @@ $vcxprojname = [string]::format("{0}_vcxproj.txt", $dir)
 
 $filtersheaders = "  <ItemGroup>`r`n"
 $vcxprojheaders = "  <ItemGroup>`r`n"
-Get-ChildItem "$dir\*" -Include *.h | `
+Get-ChildItem "$dir\*" -Include *.h -Exclude *_test.h,*_test_*.h,test_*.h | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersheaders +=
@@ -56,18 +56,26 @@ $vcxprojbenchmarks += "  </ItemGroup>`r`n"
 
 $filterstests = "  <ItemGroup>`r`n"
 $vcxprojtests = "  <ItemGroup>`r`n"
-Get-ChildItem "$dir\*" -Recurse -Include *_testing.h,*_test_*.h,test_*.h | `
+Get-ChildItem "$dir\*" -Include *_test.h,*_test_*.h,test_*.h | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filterstests +=
       "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
-      "       <Filter>Source Files</Filter>`r`n" +
+      "       <Filter>Header Files</Filter>`r`n" +
       "    </ClInclude>`r`n"
   $vcxprojtests +=
       "    <ClInclude Include=`"$msvcrelativepath`" />`r`n"
 }
-$vcxprojtests += "  </ItemGroup>`r`n"
-$vcxprojtests += "  <ItemGroup>`r`n"
+Get-ChildItem "$dir\*\*" -Recurse -Include *_test.h,*_testing.h,*_test_*.h,test_*.h | `
+Foreach-Object {
+  $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
+  $filterstests +=
+      "    <ClInclude Include=`"$msvcrelativepath`">`r`n" +
+      "       <Filter>Header Files</Filter>`r`n" +
+      "    </ClInclude>`r`n"
+  $vcxprojtests +=
+      "    <ClInclude Include=`"$msvcrelativepath`" />`r`n"
+}
 Get-ChildItem "$dir\*" -Recurse -Include *_test.cc,*_testing.cc,*_test_*.cc,test_*.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
@@ -84,7 +92,7 @@ $vcxprojtests += "  </ItemGroup>`r`n"
 $filtersinternals = "  <ItemGroup>`r`n"
 $vcxprojinternals = "  <ItemGroup>`r`n"
 
-Get-ChildItem "$dir\*\*" -Recurse -Include *.h -Exclude *_testing.h,*_test_*.h,test_*.h | `
+Get-ChildItem "$dir\*\*" -Recurse -Include *.h -Exclude *_test.h,*_testing.h,*_test_*.h,test_*.h | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersinternals +=

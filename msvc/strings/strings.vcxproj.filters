@@ -29,13 +29,7 @@
     <ClInclude Include="..\..\absl\strings\cord_buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\absl\strings\cord.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\..\absl\strings\escaping.h">

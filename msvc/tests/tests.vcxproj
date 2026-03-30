@@ -21,8 +21,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\algorithm\algorithm_test.cc" />
     <ClCompile Include="..\..\absl\algorithm\container_test.cc" />
   </ItemGroup>
@@ -32,8 +30,6 @@
     <ClInclude Include="..\..\absl\base\internal\exception_safety_testing.h" />
     <ClInclude Include="..\..\absl\base\internal\exception_testing.h" />
     <ClInclude Include="..\..\absl\base\internal\iterator_traits_test_helper.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test_helper.cc" />
     <ClCompile Include="..\..\absl\base\internal\atomic_hook_test.cc" />
     <ClCompile Include="..\..\absl\base\internal\cmake_thread_test.cc" />
@@ -71,19 +67,24 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\cleanup\cleanup_test.cc" />
   </ItemGroup>
 
   <ItemGroup>
+    <ClInclude Include="..\..\absl\container\btree_test.h" />
     <ClInclude Include="..\..\absl\container\internal\hash_generator_testing.h" />
     <ClInclude Include="..\..\absl\container\internal\hash_policy_testing.h" />
     <ClInclude Include="..\..\absl\container\internal\heterogeneous_lookup_testing.h" />
     <ClInclude Include="..\..\absl\container\internal\test_allocator.h" />
     <ClInclude Include="..\..\absl\container\internal\test_instance_tracker.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_map_modifiers_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_constructor_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_lookup_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_members_test.h" />
+    <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h" />
     <ClCompile Include="..\..\absl\container\internal\common_policy_traits_test.cc" />
     <ClCompile Include="..\..\absl\container\internal\compressed_tuple_test.cc" />
     <ClCompile Include="..\..\absl\container\internal\container_memory_test.cc" />
@@ -119,11 +120,7 @@
 
   <ItemGroup>
   </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
 
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\crc\internal\crc_cord_state_test.cc" />
     <ClCompile Include="..\..\absl\crc\internal\crc_memcpy_test.cc" />
@@ -131,8 +128,6 @@
     <ClCompile Include="..\..\absl\crc\crc32c_test.cc" />
   </ItemGroup>
 
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\debugging\internal\bounded_utf8_length_sequence_test.cc" />
     <ClCompile Include="..\..\absl\debugging\internal\decode_rust_punycode_test.cc" />
@@ -147,8 +142,6 @@
     <ClCompile Include="..\..\absl\debugging\symbolize_test.cc" />
   </ItemGroup>
 
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\flags\internal\path_util_test.cc" />
     <ClCompile Include="..\..\absl\flags\internal\program_name_test.cc" />
@@ -165,8 +158,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\functional\any_invocable_test.cc" />
     <ClCompile Include="..\..\absl\functional\bind_front_test.cc" />
     <ClCompile Include="..\..\absl\functional\function_ref_test.cc" />
@@ -174,9 +165,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ClInclude Include="..\..\absl\hash\hash_testing.h" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="..\..\absl\hash\internal\hash_test.h" />
     <ClCompile Include="..\..\absl\hash\internal\city_test.cc" />
     <ClCompile Include="..\..\absl\hash\internal\low_level_hash_test.cc" />
     <ClCompile Include="..\..\absl\hash\hash_instantiated_test.cc" />
@@ -187,8 +176,6 @@
     <ClInclude Include="..\..\absl\log\internal\test_actions.h" />
     <ClInclude Include="..\..\absl\log\internal\test_helpers.h" />
     <ClInclude Include="..\..\absl\log\internal\test_matchers.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\log\internal\container_test.cc" />
     <ClCompile Include="..\..\absl\log\internal\fnmatch_test.cc" />
     <ClCompile Include="..\..\absl\log\internal\stderr_log_sink_test.cc" />
@@ -216,30 +203,22 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\memory\memory_test.cc" />
   </ItemGroup>
 
   <ItemGroup>
     <ClInclude Include="..\..\absl\meta\internal\constexpr_testing.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\meta\internal\constexpr_testing_test.cc" />
     <ClCompile Include="..\..\absl\meta\internal\requires_test.cc" />
     <ClCompile Include="..\..\absl\meta\type_traits_test.cc" />
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\numeric\bits_test.cc" />
     <ClCompile Include="..\..\absl\numeric\int128_stream_test.cc" />
     <ClCompile Include="..\..\absl\numeric\int128_test.cc" />
   </ItemGroup>
 
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\absl\profiling\internal\exponential_biased_test.cc" />
     <ClCompile Include="..\..\absl\profiling\internal\periodic_sampler_test.cc" />
@@ -248,8 +227,6 @@
 
   <ItemGroup>
     <ClInclude Include="..\..\absl\random\internal\distribution_test_util.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\random\internal\chi_square_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\distribution_test_util_test.cc" />
     <ClCompile Include="..\..\absl\random\internal\distribution_test_util.cc" />
@@ -291,21 +268,17 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\status\status_matchers_test.cc" />
     <ClCompile Include="..\..\absl\status\status_test.cc" />
     <ClCompile Include="..\..\absl\status\statusor_test.cc" />
   </ItemGroup>
 
   <ItemGroup>
+    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
+    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
     <ClInclude Include="..\..\absl\strings\internal\cord_rep_test_util.h" />
     <ClInclude Include="..\..\absl\strings\internal\escaping_test_common.h" />
     <ClInclude Include="..\..\absl\strings\internal\numbers_test_common.h" />
-    <ClInclude Include="..\..\absl\strings\cord_test_helpers.h" />
-    <ClInclude Include="..\..\absl\strings\cordz_test_helpers.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\strings\internal\str_format\arg_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\bind_test.cc" />
     <ClCompile Include="..\..\absl\strings\internal\str_format\checker_test.cc" />
@@ -362,8 +335,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\synchronization\internal\graphcycles_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\kernel_timeout_test.cc" />
     <ClCompile Include="..\..\absl\synchronization\internal\per_thread_sem_test.cc" />
@@ -379,8 +350,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.h" />
     <ClInclude Include="..\..\absl\time\internal\test_util.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\time\internal\cctz\src\civil_time_test.cc" />
     <ClCompile Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.cc" />
     <ClCompile Include="..\..\absl\time\internal\cctz\src\time_zone_format_test.cc" />
@@ -398,8 +367,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="..\..\absl\types\any_span_test.cc" />
     <ClCompile Include="..\..\absl\types\compare_test.cc" />
     <ClCompile Include="..\..\absl\types\optional_ref_test.cc" />
@@ -408,8 +375,6 @@
     <ClCompile Include="..\..\absl\types\variant_test.cc" />
   </ItemGroup>
 
-  <ItemGroup>
-  </ItemGroup>
   <ItemGroup>
   </ItemGroup>
 

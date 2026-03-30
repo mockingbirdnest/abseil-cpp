@@ -13,7 +13,6 @@
   <ItemGroup>
     <ClInclude Include="..\..\absl\container\btree_map.h" />
     <ClInclude Include="..\..\absl\container\btree_set.h" />
-    <ClInclude Include="..\..\absl\container\btree_test.h" />
     <ClInclude Include="..\..\absl\container\chunked_queue.h" />
     <ClInclude Include="..\..\absl\container\fixed_array.h" />
     <ClInclude Include="..\..\absl\container\flat_hash_map.h" />
@@ -46,14 +45,6 @@
     <ClInclude Include="..\..\absl\container\internal\raw_hash_set_resize_impl.h" />
     <ClInclude Include="..\..\absl\container\internal\raw_hash_set.h" />
     <ClInclude Include="..\..\absl\container\internal\tracked.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_map_constructor_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_map_lookup_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_map_members_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_map_modifiers_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_set_constructor_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_set_lookup_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_set_members_test.h" />
-    <ClInclude Include="..\..\absl\container\internal\unordered_set_modifiers_test.h" />
     <ClCompile Include="..\..\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
       <ObjectFileName>$(IntDir)internal/</ObjectFileName>
     </ClCompile>
