@@ -69,7 +69,10 @@
       <LanguageStandard_C>stdc17</LanguageStandard_C>
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>PRINCIPIA</PreprocessorDefinitions>
+      <PreprocessorDefinitions>
+        PRINCIPIA;
+        PRINCIPIA_TZDIR=R"literal($(SolutionDir)\..\absl\time\internal\cctz\testdata\zoneinfo)literal"
+      </PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <TreatWarningAsError>true</TreatWarningAsError>
       <WarningLevel>Level3</WarningLevel>
