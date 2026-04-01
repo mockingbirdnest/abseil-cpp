@@ -13,6 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/flags/reflection.h"
 
 #include <memory>
@@ -266,3 +267,4 @@ TEST_F(ReflectionTest, TestMultipleFlagSaversInEnclosedScopes) {
 }
 
 }  // namespace
+#endif  // PRINCIPIA

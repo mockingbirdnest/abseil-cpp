@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/debugging/symbolize.h"
 #include <cstddef>
 
@@ -618,3 +619,4 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 #endif  // !defined(__EMSCRIPTEN__)
 }
+#endif

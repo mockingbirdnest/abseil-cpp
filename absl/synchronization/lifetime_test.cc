@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include <cstdlib>
 #include <thread>  // NOLINT(build/c++11), Abseil test
 #include <type_traits>
@@ -178,3 +179,4 @@ int main() {
   // above global object destructors to run.
   std::exit(0);
 }
+#endif

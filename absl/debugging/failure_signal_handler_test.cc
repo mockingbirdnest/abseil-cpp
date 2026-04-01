@@ -14,6 +14,7 @@
 // limitations under the License.
 //
 
+#ifndef PRINCIPIA
 #include "absl/debugging/failure_signal_handler.h"
 
 #include <csignal>
@@ -164,3 +165,4 @@ int main(int argc, char** argv) {
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
+#endif

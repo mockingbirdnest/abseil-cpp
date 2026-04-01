@@ -15,6 +15,7 @@
 // Generates probe length statistics for many combinations of key types and key
 // distributions, all using the default hash function for swisstable.
 
+#ifndef PRINCIPIA
 #include <algorithm>
 #include <cstddef>
 #include <cstdint>
@@ -581,3 +582,4 @@ int main(int argc, char** argv) {
 
   return 0;
 }
+#endif

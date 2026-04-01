@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include <cstdlib>
 
 #include "absl/hash/hash.h"
@@ -21,3 +22,4 @@ int main(int argc, char** argv) {
   if (argc < 2) return 1;
   printf("%zu\n", absl::Hash<int>{}(std::atoi(argv[1])));  // NOLINT
 }
+#endif

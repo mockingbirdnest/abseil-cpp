@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include <iostream>
 #include "absl/base/internal/thread_identity.h"
 
@@ -20,3 +21,4 @@ int main() {
   // Make sure the above call can't be optimized out
   std::cout << (void*)tid << std::endl;
 }
+#endif

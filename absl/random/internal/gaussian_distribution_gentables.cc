@@ -16,6 +16,7 @@
 //
 // $ blaze run :gaussian_distribution_gentables > gaussian_distribution.cc
 //
+#ifndef PRINCIPIA
 #include <cmath>
 #include <cstddef>
 #include <iostream>
@@ -140,3 +141,4 @@ int main(int, char**) {
   generator.Print(&std::cout);
   return 0;
 }
+#endif

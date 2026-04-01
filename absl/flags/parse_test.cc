@@ -13,6 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/flags/parse.h"
 
 #include <stdlib.h>
@@ -1092,3 +1093,4 @@ TEST_F(ParseDeathTest, ExitOnUnrecognizedFlagPrintsHelp) {
 // --------------------------------------------------------------------
 
 }  // namespace
+#endif  // PRINCIPIA

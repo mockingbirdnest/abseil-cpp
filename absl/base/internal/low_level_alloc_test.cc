@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/base/internal/low_level_alloc.h"
 
 #include <stdint.h>
@@ -178,3 +179,4 @@ int main(int argc, char *argv[]) {
 #endif
   return 0;
 }
+#endif
