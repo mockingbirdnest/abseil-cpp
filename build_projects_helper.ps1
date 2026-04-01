@@ -41,7 +41,7 @@ $vcxprojsources += "  </ItemGroup>`r`n"
 
 $filtersbenchmarks = "  <ItemGroup>`r`n"
 $vcxprojbenchmarks = "  <ItemGroup>`r`n"
-Get-ChildItem "$dir\*" -Recurse -Include *_benchmark.cc,*benchmarks.cc | `
+Get-ChildItem "$dir\*" -Recurse -Include *_benchmark.cc,*benchmarks.cc,test_time_zone_names.cc,test_util.cc | `
 Foreach-Object {
   $msvcrelativepath = $_.FullName -replace ".*abseil-cpp", "..\.."
   $filtersbenchmarks +=

@@ -14,9 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
     <ClCompile Include="..\..\absl\base\internal\spinlock_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -206,6 +203,12 @@
     <ClCompile Include="..\..\absl\time\internal\cctz\src\cctz_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\cctz\src\test_time_zone_names.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\absl\time\internal\test_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\absl\time\civil_time_benchmark.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -231,5 +234,4 @@
 
   <ItemGroup>
   </ItemGroup>
-
 </Project>
