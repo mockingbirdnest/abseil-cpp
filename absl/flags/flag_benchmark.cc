@@ -122,8 +122,8 @@ std::string AbslUnparseFlag(const UDT&) { return ""; }
   REPLICATE_8(A, T, name, index##0) REPLICATE_8(A, T, name, index##1)
 #if defined(_MSC_VER)
 #define REPLICATE(A, T, name) \
-  REPLICATE_7(A, T, name, 0) REPLICATE_7(A, T, name, 1)
-#define SINGLE_FLAG(T) FLAGS_##T##_flag_00000000
+  REPLICATE_6(A, T, name, 0) REPLICATE_6(A, T, name, 1)
+#define SINGLE_FLAG(T) FLAGS_##T##_flag_0000000
 #else
 #define REPLICATE(A, T, name) \
   REPLICATE_9(A, T, name, 0) REPLICATE_9(A, T, name, 1)
@@ -165,7 +165,7 @@ BENCHMARKED_TYPES(FLAG_PTR_ARR)
 #define BM_SingleGetFlag(T)                                    \
   void BM_SingleGetFlag_##T(benchmark::State& state) {         \
     for (auto _ : state) {                                     \
-      benchmark::DoNotOptimize(absl::GetFlag(SINGLE_FLAG(T))); \
+      benchmark::DoNotOptimize<T>(absl::GetFlag(SINGLE_FLAG(T))); \
     }                                                          \
   }                                                            \
   BENCHMARK(BM_SingleGetFlag_##T)->ThreadRange(1, 16);
