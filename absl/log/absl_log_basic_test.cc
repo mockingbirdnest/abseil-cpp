@@ -13,6 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/log/absl_log.h"
 
 #define ABSL_TEST_LOG ABSL_LOG
@@ -20,3 +21,4 @@
 
 #include "gtest/gtest.h"
 #include "absl/log/log_basic_test_impl.inc"
+#endif  // PRINCIPIA
