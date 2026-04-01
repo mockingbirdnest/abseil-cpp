@@ -83,8 +83,14 @@ Foreach-Object {
       "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
       "       <Filter>Source Files</Filter>`r`n" +
       "    </ClCompile>`r`n"
+  # There are multiple tests with the same filename in different directories, and they would project objects
+  # with the same name.  We want to avoid having one test project for each production project, so we put the 
+  # objects in separate directories based on the directory where the source lives.  (This does not make 
+  # conflicts impossible, just less likely).
   $vcxprojtests +=
-      "    <ClCompile Include=`"$msvcrelativepath`" />`r`n"
+      "    <ClCompile Include=`"$msvcrelativepath`">`r`n" +
+      "      <ObjectFileName>`$(IntDir)`$([System.IO.Path]::GetFilename(`$([System.IO.Path]::GetDirectoryName(%(FullPath)))))\</ObjectFileName>`r`n" +
+      "    </ClCompile>`r`n"
 }
 $filterstests += "  </ItemGroup>`r`n"
 $vcxprojtests += "  </ItemGroup>`r`n"
