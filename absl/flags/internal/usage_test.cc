@@ -13,6 +13,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/flags/internal/usage.h"
 
 #include <stdint.h>
@@ -538,7 +539,6 @@ path.
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   (void)absl::GetFlag(FLAGS_undefok);  // Force linking of parse.cc
   flags::SetProgramInvocationName("usage_test");

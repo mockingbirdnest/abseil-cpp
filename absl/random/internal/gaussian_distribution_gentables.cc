@@ -16,6 +16,7 @@
 //
 // $ blaze run :gaussian_distribution_gentables > gaussian_distribution.cc
 //
+#ifndef PRINCIPIA
 #include <cmath>
 #include <cstddef>
 #include <iostream>
@@ -134,7 +135,6 @@ void TableGenerator::Print(std::ostream* os) {
 ABSL_NAMESPACE_END
 }  // namespace absl
 
-#ifndef _MSC_VER
 int main(int, char**) {
   std::cerr << "\nCopy the output to gaussian_distribution.cc" << std::endl;
   absl::random_internal::TableGenerator generator;

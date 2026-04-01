@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
+#ifndef PRINCIPIA
 #include <cstdint>
 #include <cstdio>
 #include <cstring>
@@ -171,7 +172,6 @@ void RunAll(const int argc, char* argv[]) {
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   RunAll(argc, argv);
   return 0;

@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include <cstdlib>
 #include <thread>  // NOLINT(build/c++11), Abseil test
 #include <type_traits>
@@ -171,7 +172,6 @@ ABSL_CONST_INIT absl::Mutex late_const_init_mutex(absl::kConstInit);
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main() {
   TestLocals();
   TestConstInitGlobal();

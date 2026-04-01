@@ -15,6 +15,7 @@
 // Generates probe length statistics for many combinations of key types and key
 // distributions, all using the default hash function for swisstable.
 
+#ifndef PRINCIPIA
 #include <algorithm>
 #include <cstddef>
 #include <cstdint>
@@ -492,7 +493,6 @@ void RunForType(std::vector<Result>& results) {
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main(int argc, char** argv) {
   // Parse the benchmark flags. Ignore all of them except the regex pattern.
   for (int i = 1; i < argc; ++i) {

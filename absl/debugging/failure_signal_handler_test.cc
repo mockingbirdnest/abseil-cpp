@@ -14,6 +14,7 @@
 // limitations under the License.
 //
 
+#ifndef PRINCIPIA
 #include "absl/debugging/failure_signal_handler.h"
 
 #include <csignal>
@@ -159,7 +160,6 @@ INSTANTIATE_TEST_SUITE_P(AbslDeathTest, FailureSignalHandlerDeathTest,
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main(int argc, char** argv) {
   absl::InitializeSymbolizer(argv[0]);
   testing::InitGoogleTest(&argc, argv);

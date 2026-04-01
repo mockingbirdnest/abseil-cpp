@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/base/internal/low_level_alloc.h"
 
 #include <stdint.h>
@@ -158,7 +159,6 @@ static struct BeforeMain {
 ABSL_NAMESPACE_END
 }  // namespace absl
 
-#ifndef _MSC_VER
 int main(int argc, char *argv[]) {
   // The actual test runs in the global constructor of `before_main`.
   printf("PASS\n");

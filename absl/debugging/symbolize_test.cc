@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/debugging/symbolize.h"
 #include <cstddef>
 
@@ -580,7 +581,6 @@ TEST(Symbolize, Unimplemented) {
 
 #endif
 
-#ifndef _MSC_VER
 int main(int argc, char **argv) {
 #if !defined(__EMSCRIPTEN__)
   // Make sure kHpageTextPadding is linked into the binary.

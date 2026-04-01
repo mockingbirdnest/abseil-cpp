@@ -37,6 +37,7 @@
 // infinity. The largest finite float and double values are approximately
 // 3.40e+38 and 1.80e+308.
 
+#ifndef PRINCIPIA
 #include <cstdint>
 #include <cstdio>
 #include <optional>
@@ -172,7 +173,6 @@ static bool ProcessOneTestFile(const char* filename) {
   return true;
 }
 
-#ifndef _MSC_VER
 int main(int argc, char** argv) {
   if (argc < 2) {
     absl::FPrintF(
