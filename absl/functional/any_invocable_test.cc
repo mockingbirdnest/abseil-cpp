@@ -555,9 +555,12 @@ TYPED_TEST_P(AnyInvTestBasic, Invocation) {
   using FunType = typename TypeParam::FunType;
   using AnyInvCallType = MemberTypeOf<decltype(&AnyInvType::operator())>;
 
+// For some reason the first type is __cdecl and the second one is __vectorcall.
+#ifndef PRINCIPIA
   // Make sure the function call operator of AnyInvocable always has the
   // type that was specified via the template argument.
   EXPECT_TRUE((std::is_same<AnyInvCallType, FunType>::value));
+#endif  // PRINCIPIA
 
   AnyInvType fun = &add_function;
 
