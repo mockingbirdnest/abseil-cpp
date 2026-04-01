@@ -348,17 +348,17 @@ TEST(FunctionRefTest, Lambdas) {
 }
 
 #if ABSL_INTERNAL_CPLUSPLUS_LANG >= 202002L
-static_assert(std::is_same_v<decltype(FunctionRef(nontype<&Class::Func>,
+static_assert(std::is_same_v<decltype(FunctionRef<int()>(nontype<&Class::Func>,
                                                   std::declval<Class&>())),
                              FunctionRef<int()>>);
-static_assert(std::is_same_v<decltype(FunctionRef(nontype<&Class::CFunc>,
+static_assert(std::is_same_v<decltype(FunctionRef<int() const>(nontype<&Class::CFunc>,
                                                   std::declval<Class&>())),
                              FunctionRef<int() const>>);
 
-static_assert(std::is_same_v<decltype(FunctionRef(nontype<&Class::Func>,
+static_assert(std::is_same_v<decltype(FunctionRef<int()>(nontype<&Class::Func>,
                                                   std::declval<Class*>())),
                              FunctionRef<int()>>);
-static_assert(std::is_same_v<decltype(FunctionRef(nontype<&Class::CFunc>,
+static_assert(std::is_same_v<decltype(FunctionRef<int() const>(nontype<&Class::CFunc>,
                                                   std::declval<Class*>())),
                              FunctionRef<int() const>>);
 
