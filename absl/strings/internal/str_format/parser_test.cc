@@ -373,9 +373,13 @@ std::string SummarizeParsedFormat(const ParsedFormatBase& pc) {
   return out;
 }
 
-class ParsedFormatTest : public testing::Test {};
+// We have a name conflict with str_format_test.cc if this is called
+// ParsedFormatTest.
+#define PRINCIPIA_TEST ParsedFormatToast
 
-TEST_F(ParsedFormatTest, ValueSemantics) {
+class PRINCIPIA_TEST : public testing::Test {};
+
+TEST_F(PRINCIPIA_TEST, ValueSemantics) {
   ParsedFormatBase p1({}, true, {});  // empty format
   EXPECT_EQ("", SummarizeParsedFormat(p1));
 
@@ -405,7 +409,7 @@ struct ExpectParse {
   const char* out;
 };
 
-TEST_F(ParsedFormatTest, Parsing) {
+TEST_F(PRINCIPIA_TEST, Parsing) {
   // Parse should be equivalent to that obtained by ConversionParseIterator.
   // No need to retest the parsing edge cases here.
   const ExpectParse kExpect[] = {
@@ -423,7 +427,7 @@ TEST_F(ParsedFormatTest, Parsing) {
   }
 }
 
-TEST_F(ParsedFormatTest, ParsingFlagOrder) {
+TEST_F(PRINCIPIA_TEST, ParsingFlagOrder) {
   const ExpectParse kExpect[] = {
       {"a%+ 0d", {FormatConversionCharSetInternal::d}, "[a]{+ 0d:1$d}"},
       {"a%+0 d", {FormatConversionCharSetInternal::d}, "[a]{+0 d:1$d}"},

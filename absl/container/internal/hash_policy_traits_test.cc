@@ -54,8 +54,12 @@ struct PolicyWithoutOptionalOps {
 std::function<int(int)> PolicyWithoutOptionalOps::apply_impl;
 std::function<Slot&(Slot*)> PolicyWithoutOptionalOps::value;
 
-struct Test : ::testing::Test {
-  Test() {
+// We have a name conflict with common_policy_traits_test.cc if this is called
+// Test.
+#define PRINCIPIA_TEST Toast
+
+struct PRINCIPIA_TEST : ::testing::Test {
+  PRINCIPIA_TEST() {
     PolicyWithoutOptionalOps::apply_impl = [&](int a1) -> int {
       return apply.Call(a1);
     };
@@ -70,12 +74,12 @@ struct Test : ::testing::Test {
   MockFunction<Slot&(Slot*)> value;
 };
 
-TEST_F(Test, apply) {
+TEST_F(PRINCIPIA_TEST, apply) {
   EXPECT_CALL(apply, Call(42)).WillOnce(Return(1337));
   EXPECT_EQ(1337, (hash_policy_traits<PolicyWithoutOptionalOps>::apply(42)));
 }
 
-TEST_F(Test, value) {
+TEST_F(PRINCIPIA_TEST, value) {
   int b = 0;
   EXPECT_CALL(value, Call(&a)).WillOnce(ReturnRef(b));
   EXPECT_EQ(&b, &hash_policy_traits<PolicyWithoutOptionalOps>::value(&a));
