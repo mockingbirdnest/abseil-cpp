@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#ifndef PRINCIPIA
 #include "absl/random/internal/randen_hwaes.h"
 
 #include "gmock/gmock.h"
@@ -99,3 +100,4 @@ int main(int argc, char* argv[]) {
   return RUN_ALL_TESTS();
 }
 #endif
+#endif  // PRINCIPIA
