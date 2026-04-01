@@ -180,8 +180,8 @@ class LogMessage {
   LogMessage& operator<<(wchar_t v);
 
   // Handle stream manipulators e.g. std::endl.
-  LogMessage& operator<<(std::ostream& (*absl_nonnull m)(std::ostream& os));
-  LogMessage& operator<<(std::ios_base& (*absl_nonnull m)(std::ios_base& os));
+  LogMessage& operator<<(std::ostream& (__CLRCALL_OR_CDECL *absl_nonnull m)(std::ostream& os));
+  LogMessage& operator<<(std::ios_base& (__CLRCALL_OR_CDECL *absl_nonnull m)(std::ios_base& os));
 
   // Literal strings.  This allows us to record C string literals as literals in
   // the logging.proto.Value.
