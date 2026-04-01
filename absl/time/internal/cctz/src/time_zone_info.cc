@@ -434,7 +434,11 @@ std::unique_ptr<ZoneInfoSource> FileZoneInfoSource::Open(
   // Map the time-zone name to a path name.
   std::string path;
   if (pos == name.size() || name[pos] != '/') {
+#ifdef PRINCIPIA_TZDIR
+    const char* tzdir = PRINCIPIA_TZDIR;
+#else
     const char* tzdir = "/usr/share/zoneinfo";
+#endif
     char* tzdir_env = nullptr;
 #if defined(_MSC_VER)
     _dupenv_s(&tzdir_env, nullptr, "TZDIR");
