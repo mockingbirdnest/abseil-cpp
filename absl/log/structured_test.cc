@@ -47,7 +47,13 @@ std::ios &LoggingDefaults(std::ios &str) {
 TEST(StreamingFormatTest, LogAsLiteral) {
   std::ostringstream stream;
   const std::string not_a_literal("hello world");
-  stream << LoggingDefaults << absl::LogAsLiteral(not_a_literal);
+  stream
+// For some reason, calling this prefixes the string with something that
+// looks like an address.
+#ifndef PRINCIPIA
+<< LoggingDefaults
+#endif  // PRINCIPIA
+<< absl::LogAsLiteral(not_a_literal);
 
   absl::ScopedMockLog sink;
   EXPECT_CALL(sink, Send).Times(0);
