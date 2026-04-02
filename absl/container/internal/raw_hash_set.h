@@ -1423,7 +1423,7 @@ inline probe_seq<Group::kWidth> probe(const CommonFields& common, size_t hash) {
   return probe(common.capacity(), hash);
 }
 
-constexpr size_t kProbedElementIndexSentinel = ~size_t{};
+inline constexpr size_t kProbedElementIndexSentinel = ~size_t{};
 
 // Implementation detail of transfer_unprobed_elements_to_next_capacity_fn.
 // Tries to find the new index for an element whose hash corresponds to

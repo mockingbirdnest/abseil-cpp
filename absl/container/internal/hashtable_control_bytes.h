@@ -66,9 +66,9 @@ uint32_t TrailingZeros(T x) {
 }
 
 // 8 bytes bitmask with most significant bit set for every byte.
-constexpr uint64_t kMsbs8Bytes = 0x8080808080808080ULL;
+inline constexpr uint64_t kMsbs8Bytes = 0x8080808080808080ULL;
 // 8 kEmpty bytes that is useful for small table initialization.
-constexpr uint64_t k8EmptyBytes = kMsbs8Bytes;
+inline constexpr uint64_t k8EmptyBytes = kMsbs8Bytes;
 
 // An abstract bitmask, such as that emitted by a SIMD instruction.
 //

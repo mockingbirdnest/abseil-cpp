@@ -124,8 +124,8 @@ ABSL_ATTRIBUTE_CONST_FUNCTION constexpr Duration MakeDuration(int64_t hi,
 ABSL_ATTRIBUTE_CONST_FUNCTION constexpr Duration MakeDuration(int64_t hi,
                                                               int64_t lo);
 ABSL_ATTRIBUTE_CONST_FUNCTION inline Duration MakePosDoubleDuration(double n);
-constexpr int64_t kTicksPerNanosecond = 4;
-constexpr int64_t kTicksPerSecond = 1000 * 1000 * 1000 * kTicksPerNanosecond;
+inline constexpr int64_t kTicksPerNanosecond = 4;
+inline constexpr int64_t kTicksPerSecond = 1000 * 1000 * 1000 * kTicksPerNanosecond;
 template <std::intmax_t N>
 ABSL_ATTRIBUTE_CONST_FUNCTION constexpr Duration FromInt64(int64_t v,
                                                            std::ratio<1, N>);

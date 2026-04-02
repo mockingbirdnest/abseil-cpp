@@ -56,7 +56,7 @@
 namespace absl {
 ABSL_NAMESPACE_BEGIN
 namespace log_internal {
-constexpr int kLogMessageBufferSize = 15000;
+inline constexpr int kLogMessageBufferSize = 15000;
 
 enum class StructuredStringType;
 
