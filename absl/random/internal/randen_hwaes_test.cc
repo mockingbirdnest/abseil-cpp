@@ -65,7 +65,6 @@ TEST(RandenHwAesTest, Default) {
 
 }  // namespace
 
-#ifndef _MSC_VER
 int main(int argc, char* argv[]) {
   testing::InitGoogleTest(&argc, argv);
 
@@ -99,5 +98,4 @@ int main(int argc, char* argv[]) {
   }
   return RUN_ALL_TESTS();
 }
-#endif
 #endif  // PRINCIPIA
