@@ -23,20 +23,20 @@
 #include "absl/log/internal/strip.h"
 
 // ABSL_LOG()
-#define ABSL_LOG_INTERNAL_LOG_IMPL(severity)             \
-  ABSL_LOG_INTERNAL_CONDITION##severity(STATELESS, true) \
+#define ABSL_LOG_INTERNAL_LOG_IMPL(severity)              \
+  ABSL_LOG_INTERNAL_CONDITION##severity##_TRUE(STATELESS) \
       ABSL_LOG_INTERNAL_LOG##severity.InternalStream()
 
 // ABSL_PLOG()
-#define ABSL_LOG_INTERNAL_PLOG_IMPL(severity)            \
-  ABSL_LOG_INTERNAL_CONDITION##severity(STATELESS, true) \
-      ABSL_LOG_INTERNAL_LOG##severity.InternalStream()   \
+#define ABSL_LOG_INTERNAL_PLOG_IMPL(severity)             \
+  ABSL_LOG_INTERNAL_CONDITION##severity##_TRUE(STATELESS) \
+      ABSL_LOG_INTERNAL_LOG##severity.InternalStream()    \
           .WithPerror()
 
 // ABSL_DLOG()
 #ifndef NDEBUG
-#define ABSL_LOG_INTERNAL_DLOG_IMPL(severity)            \
-  ABSL_LOG_INTERNAL_CONDITION##severity(STATELESS, true) \
+#define ABSL_LOG_INTERNAL_DLOG_IMPL(severity)             \
+  ABSL_LOG_INTERNAL_CONDITION##severity##_TRUE(STATELESS) \
       ABSL_LOG_INTERNAL_DLOG##severity.InternalStream()
 #else
 #define ABSL_LOG_INTERNAL_DLOG_IMPL(severity)             \

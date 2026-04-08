@@ -66,6 +66,14 @@
   case 0:                                                \
   default:                                               \
     !(condition) ? (void)0 : ::absl::log_internal::Voidify() &&
+// MSVC doesn't see that the above code is [[noreturn]].  Since the `true` case
+// is common (think `LOG(FATAL)`) we provide a separate macro for it that
+// doesn't even have the condition.
+#define ABSL_LOG_INTERNAL_STATELESS_CONDITION_TRUE() \
+  switch (0)                                         \
+  case 0:                                            \
+  default:                                           \
+    ::absl::log_internal::Voidify() &&
 
 // `ABSL_LOG_INTERNAL_STATEFUL_CONDITION` applies a condition like
 // `ABSL_LOG_INTERNAL_STATELESS_CONDITION` but adds to that a series of variable
@@ -98,6 +106,8 @@
          absl_log_internal_stateful_condition_do_log;                     \
          absl_log_internal_stateful_condition_do_log = false)             \
   ::absl::log_internal::Voidify() &&
+#define ABSL_LOG_INTERNAL_STATEFUL_CONDITION_TRUE() \
+  ABSL_LOG_INTERNAL_STATEFUL_CONDITION(true)
 
 // `ABSL_LOG_INTERNAL_CONDITION_*` serve to combine any conditions from the
 // macro (e.g. `LOG_IF` or `VLOG`) with inherent conditions (e.g.
@@ -111,18 +121,26 @@
       (condition) &&                                      \
       ::absl::LogSeverity::kInfo >=                       \
           static_cast<::absl::LogSeverityAtLeast>(ABSL_MIN_LOG_LEVEL))
+#define ABSL_LOG_INTERNAL_CONDITION_INFO_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_INFO(type, true)
 #define ABSL_LOG_INTERNAL_CONDITION_WARNING(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(                      \
       (condition) &&                                         \
       ::absl::LogSeverity::kWarning >=                       \
           static_cast<::absl::LogSeverityAtLeast>(ABSL_MIN_LOG_LEVEL))
+#define ABSL_LOG_INTERNAL_CONDITION_WARNING_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_WARNING(type, true)
 #define ABSL_LOG_INTERNAL_CONDITION_ERROR(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(                    \
       (condition) &&                                       \
       ::absl::LogSeverity::kError >=                       \
           static_cast<::absl::LogSeverityAtLeast>(ABSL_MIN_LOG_LEVEL))
+#define ABSL_LOG_INTERNAL_CONDITION_ERROR_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_ERROR(type, true)
 #define ABSL_LOG_INTERNAL_CONDITION_DO_NOT_SUBMIT(type, condition) \
   ABSL_LOG_INTERNAL_CONDITION_ERROR(type, condition)
+#define ABSL_LOG_INTERNAL_CONDITION_DO_NOT_SUBMIT_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_DO_NOT_SUBMIT_TRUE(type, true)
 // NOTE: Use ternary operators instead of short-circuiting to mitigate
 // https://bugs.llvm.org/show_bug.cgi?id=51928.
 #define ABSL_LOG_INTERNAL_CONDITION_FATAL(type, condition)                 \
@@ -133,6 +151,8 @@
                           ? true                                           \
                           : (::absl::log_internal::AbortQuietly(), false)) \
                    : false))
+#define ABSL_LOG_INTERNAL_CONDITION_FATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_FATAL(type, true)
 // NOTE: Use ternary operators instead of short-circuiting to mitigate
 // https://bugs.llvm.org/show_bug.cgi?id=51928.
 #define ABSL_LOG_INTERNAL_CONDITION_QFATAL(type, condition)               \
@@ -143,6 +163,8 @@
                           ? true                                          \
                           : (::absl::log_internal::ExitQuietly(), false)) \
                    : false))
+#define ABSL_LOG_INTERNAL_CONDITION_QFATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_QFATAL(type, true)
 #define ABSL_LOG_INTERNAL_CONDITION_DFATAL(type, condition)                    \
   ABSL_LOG_INTERNAL_##type##_CONDITION(                                        \
       (ABSL_ASSUME(absl::kLogDebugFatal == absl::LogSeverity::kError ||        \
@@ -152,6 +174,8 @@
                 static_cast<::absl::LogSeverityAtLeast>(ABSL_MIN_LOG_LEVEL) || \
             (::absl::kLogDebugFatal == ::absl::LogSeverity::kFatal &&          \
              (::absl::log_internal::AbortQuietly(), false)))))
+#define ABSL_LOG_INTERNAL_CONDITION_DFATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_DFATAL(type, true)
 
 #define ABSL_LOG_INTERNAL_CONDITION_LEVEL(severity)                            \
   for (int absl_log_internal_severity_loop = 1;                                \
@@ -170,18 +194,32 @@
 #else  // ndef ABSL_MIN_LOG_LEVEL
 #define ABSL_LOG_INTERNAL_CONDITION_INFO(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_INFO_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_WARNING(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_WARNING_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_ERROR(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_ERROR_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_DO_NOT_SUBMIT(type, condition) \
   ABSL_LOG_INTERNAL_CONDITION_ERROR(type, condition)
+#define ABSL_LOG_INTERNAL_CONDITION_DO_NOT_SUBMIT_TRUE(type) \
+  ABSL_LOG_INTERNAL_CONDITION_ERROR_TRUE(type)
 #define ABSL_LOG_INTERNAL_CONDITION_FATAL(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_FATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_QFATAL(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_QFATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_DFATAL(type, condition) \
   ABSL_LOG_INTERNAL_##type##_CONDITION(condition)
+#define ABSL_LOG_INTERNAL_CONDITION_DFATAL_TRUE(type) \
+  ABSL_LOG_INTERNAL_##type##_CONDITION_TRUE()
 #define ABSL_LOG_INTERNAL_CONDITION_LEVEL(severity)                            \
   for (int absl_log_internal_severity_loop = 1;                                \
        absl_log_internal_severity_loop; absl_log_internal_severity_loop = 0)   \
