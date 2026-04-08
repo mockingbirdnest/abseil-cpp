@@ -28,6 +28,7 @@
 
 #include <algorithm>
 #include <cstring>
+#include <sstream>
 
 #include "absl/base/internal/raw_logging.h"
 
@@ -79,11 +80,36 @@ bool Symbolize(const void* pc, char* out, int out_size) {
   SYMBOL_INFO* symbol = reinterpret_cast<SYMBOL_INFO*>(buf);
   symbol->SizeOfStruct = sizeof(SYMBOL_INFO);
   symbol->MaxNameLen = MAX_SYM_NAME;
-  if (!SymFromAddr(process, reinterpret_cast<DWORD64>(pc), nullptr, symbol)) {
-    return false;
+
+  // Code adapted from https://github.com/mockingbirdnest/chromium/blob/184604afe32ff8054a51f2ebc7012c2303f73fbf/base/debug/stack_trace_win.cc.
+  bool const has_symbol =
+      SymFromAddr(process, reinterpret_cast<DWORD64>(pc), nullptr, symbol);
+
+  // Attempt to retrieve line number information.
+  DWORD line_displacement = 0;
+  IMAGEHLP_LINE64 line = {};
+  line.SizeOfStruct = sizeof(IMAGEHLP_LINE64);
+  bool const has_line =
+      SymGetLineFromAddr64(process, reinterpret_cast<DWORD64>(pc),
+                           &line_displacement, &line);
+
+  // Output the backtrace line.
+  std::ostringstream os;
+  os << "\t";
+  if (has_symbol) {
+    os << symbol->Name;
+  } else {
+    // If there is no symbol information, add a spacer.
+    os << "(No symbol)";
   }
+  if (has_line) {
+    os << " (" << line.FileName << ":" << line.LineNumber << ")";
+  }
+
   const size_t out_size_t = static_cast<size_t>(out_size);
-  strncpy(out, symbol->Name, out_size_t);
+  strncpy(out, os.str().c_str(), out_size_t);
+  // End of adapted code.
+
   if (out[out_size_t - 1] != '\0') {
     // strncpy() does not '\0' terminate when it truncates.
     static constexpr char kEllipsis[] = "...";
