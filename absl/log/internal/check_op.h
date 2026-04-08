@@ -71,7 +71,7 @@
              ::absl::log_internal::GetReferenceableValue(val2),                \
              ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(val1_text " " #op          \
                                                               " " val2_text))) \
-    ABSL_LOG_INTERNAL_CONDITION_FATAL(STATELESS, true)                         \
+    ABSL_LOG_INTERNAL_CONDITION_FATAL_TRUE(STATELESS)                          \
   ABSL_LOG_INTERNAL_CHECK(::absl::implicit_cast<const char* absl_nonnull>(     \
                               absl_log_internal_check_op_result))              \
       .InternalStream()
@@ -83,7 +83,7 @@
                  ::absl::log_internal::GetReferenceableValue(val2),         \
                  ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(                    \
                      val1_text " " #op " " val2_text)))                     \
-    ABSL_LOG_INTERNAL_CONDITION_QFATAL(STATELESS, true)                     \
+    ABSL_LOG_INTERNAL_CONDITION_QFATAL_TRUE(STATELESS)                      \
   ABSL_LOG_INTERNAL_QCHECK(::absl::implicit_cast<const char* absl_nonnull>( \
                                absl_log_internal_qcheck_op_result))         \
       .InternalStream()
@@ -94,7 +94,7 @@
                  (s1), (s2),                                                   \
                  ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(s1_text " " #op        \
                                                                 " " s2_text))) \
-    ABSL_LOG_INTERNAL_CONDITION_FATAL(STATELESS, true)                         \
+    ABSL_LOG_INTERNAL_CONDITION_FATAL_TRUE(STATELESS)                          \
   ABSL_LOG_INTERNAL_CHECK(::absl::implicit_cast<const char* absl_nonnull>(     \
                               absl_log_internal_check_strop_result))           \
       .InternalStream()
@@ -105,7 +105,7 @@
                  (s1), (s2),                                                   \
                  ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(s1_text " " #op        \
                                                                 " " s2_text))) \
-    ABSL_LOG_INTERNAL_CONDITION_QFATAL(STATELESS, true)                        \
+    ABSL_LOG_INTERNAL_CONDITION_QFATAL_TRUE(STATELESS)                         \
   ABSL_LOG_INTERNAL_QCHECK(::absl::implicit_cast<const char* absl_nonnull>(    \
                                absl_log_internal_qcheck_strop_result))         \
       .InternalStream()
@@ -148,7 +148,7 @@
                      ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(val_text      \
                                                             " is OK")),   \
        !ABSL_PREDICT_TRUE(absl_log_internal_check_ok_goo.first->ok());)   \
-    ABSL_LOG_INTERNAL_CONDITION_FATAL(STATELESS, true)                    \
+    ABSL_LOG_INTERNAL_CONDITION_FATAL_TRUE(STATELESS)                     \
   ABSL_LOG_INTERNAL_CHECK(absl_log_internal_check_ok_goo.second)          \
       .InternalStream()
 #define ABSL_LOG_INTERNAL_QCHECK_OK(val, val_text)                        \
@@ -165,7 +165,7 @@
                      ABSL_LOG_INTERNAL_STRIP_STRING_LITERAL(val_text      \
                                                             " is OK")),   \
        !ABSL_PREDICT_TRUE(absl_log_internal_qcheck_ok_goo.first->ok());)  \
-    ABSL_LOG_INTERNAL_CONDITION_QFATAL(STATELESS, true)                   \
+    ABSL_LOG_INTERNAL_CONDITION_QFATAL_TRUE(STATELESS)                    \
   ABSL_LOG_INTERNAL_QCHECK(absl_log_internal_qcheck_ok_goo.second)        \
       .InternalStream()
 
