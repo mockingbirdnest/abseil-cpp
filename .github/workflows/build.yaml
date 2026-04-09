@@ -10,6 +10,7 @@ on:
 env:
   PRINCIPIA_HEADERS_ABSEIL: absl
   PRINCIPIA_MSVC_ABSEIL: msvc
+  PRINCIPIA_SOLUTION_ABSEIL: msvc/abseil-cpp.slnf
 
 jobs:
   build:
@@ -21,34 +22,22 @@ jobs:
     - name: Checkout source files
       uses: actions/checkout@v3
 
+    - name: Checkout googletest source files
+      uses: mockingbirdnest/actions/windows/checkout_googletest@main
+
+    - name: Checkout re2 source files
+      uses: mockingbirdnest/actions/windows/checkout_re2@main
+
     - name: Initialize build environment
       uses: mockingbirdnest/actions/windows/initialize_build@main
       with:
-        configuration: ${{ matrix.configuration }}
-
-    - name: Download glog artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
-      with:
-        name: glog
-        configuration: ${{ matrix.configuration }}
-
-    - name: Download benchmark artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
-      with:
-        name: benchmark
-        configuration: ${{ matrix.configuration }}
-
-    - name: Download googletest artifact
-      uses: mockingbirdnest/actions/windows/download_artifact@main
-      with:
-        name: googletest
         configuration: ${{ matrix.configuration }}
 
     - name: Rebuild ${{ matrix.configuration }}
       uses: mockingbirdnest/actions/windows/rebuild@main
       with:
         configuration: ${{ matrix.configuration }}
-        solution_directory: ${{ env.PRINCIPIA_MSVC_ABSEIL }}
+        solution_glob: ${{ env.PRINCIPIA_SOLUTION_ABSEIL }}
 
     - name: Upload artifact
       uses: mockingbirdnest/actions/windows/upload_artifact@main
