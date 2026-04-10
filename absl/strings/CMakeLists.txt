@@ -149,7 +149,6 @@ absl_cc_library(
   NAME
     strings_internal
   HDRS
-    "internal/char_map.h"
     "internal/escaping.h"
     "internal/ostringstream.h"
     "internal/resize_uninitialized.h"
