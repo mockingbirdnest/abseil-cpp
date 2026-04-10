@@ -6,5 +6,10 @@ cmake \
     -DCMAKE_OSX_ARCHITECTURES="x86_64" \
     -DCMAKE_OSX_DEPLOYMENT_TARGET="${OSX_DEPLOYMENT_TARGET}" \
     -DCMAKE_LD_FLAGS="${LD_FLAGS?}" \
-    -DBUILD_TESTING=OFF
-make -j8
+    -DCMAKE_INSTALL_PREFIX=install \
+    -DABSL_BUILD_TEST_HELPERS=ON \
+    -DABSL_USE_EXTERNAL_GOOGLETEST=ON \
+    -DABSL_FIND_GOOGLETEST=ON \
+    -DBUILD_TESTING=OFF \
+    -DCMAKE_PREFIX_PATH=deps/googletest/install
+cmake --build . --target install --parallel 8
