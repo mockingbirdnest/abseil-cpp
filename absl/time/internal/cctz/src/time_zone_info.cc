@@ -380,7 +380,7 @@ bool TimeZoneInfo::ExtendTransitions() {
 
 namespace {
 
-using FilePtr = std::unique_ptr<FILE, int (__CRTDECL *)(FILE*)>;
+using FilePtr = std::unique_ptr<FILE, int (__cdecl *)(FILE*)>;
 
 // fopen(3) adaptor.
 inline FilePtr FOpen(const char* path, const char* mode) {

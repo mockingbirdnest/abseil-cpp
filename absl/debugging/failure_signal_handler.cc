@@ -104,7 +104,7 @@ struct FailureSignalData {
   using StructSigaction = struct sigaction;
 #define FSD_PREVIOUS_INIT FailureSignalData::StructSigaction()
 #else
-  void (__CRTDECL *previous_handler)(int);
+  void (__cdecl *previous_handler)(int);
 #define FSD_PREVIOUS_INIT SIG_DFL
 #endif
 };
@@ -247,7 +247,7 @@ static void InstallOneFailureHandler(FailureSignalData* data,
 #else
 
 static void InstallOneFailureHandler(FailureSignalData* data,
-                                     void (__CRTDECL *handler)(int)) {
+                                     void (__cdecl *handler)(int)) {
   data->previous_handler = signal(data->signo, handler);
   ABSL_RAW_CHECK(data->previous_handler != SIG_ERR, "signal() failed");
 }
@@ -363,7 +363,7 @@ static int GetCpuNumber() {
 }
 
 #ifndef ABSL_HAVE_SIGACTION
-static void __CRTDECL AbslFailureSignalHandler(int signo) {
+static void __cdecl AbslFailureSignalHandler(int signo) {
   void* ucontext = nullptr;
 #else
 static void AbslFailureSignalHandler(int signo, siginfo_t*, void* ucontext) {
