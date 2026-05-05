@@ -165,10 +165,17 @@ time_zone local_time_zone() {
   }
 #endif
 #if defined(_WIN32)
+// The time_zone_info.cc code is incapable of finding the time zones on Windows.
+// (It looks in /usr/share/zoneinfo...)  Since we only care about the local
+// time, fall back to the libc implementation.
+# ifdef PRINCIPIA
+  zone = "libc:localtime";
+# else
   std::string win32_tz = GetWindowsLocalTimeZone();
   if (!win32_tz.empty()) {
     zone = win32_tz.c_str();
   }
+# endif
 #endif
 
   // Allow ${TZ} to override to default zone.
