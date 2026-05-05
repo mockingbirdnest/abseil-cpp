@@ -42,7 +42,7 @@ namespace {
 
 #if defined(_WIN32) || defined(_WIN64)
 // Uses the globals: '_timezone', '_dstbias' and '_tzname'.
-// NOTE(phl): Microsoft, being in Redmont, counts West and not East.
+// NOTE(phl): Microsoft, being in Redmond, counts West and not East.
 auto tm_gmtoff(const std::tm& tm) -> decltype(_timezone + _dstbias) {
   const bool is_dst = tm.tm_isdst > 0;
   return -(_timezone + (is_dst ? _dstbias : 0));
